@@ -1,0 +1,818 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Courier New,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Courier New,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:9.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:9.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Courier New,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Courier New,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:9.0px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:9.0px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:7.0px;color:rgb(128,128,128);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:7.0px;color:rgb(128,128,128);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:5.1px;color:rgb(128,128,128);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:5.1px;color:rgb(128,128,128);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:12.0px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:12.0px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:5.1px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:5.1px;color:rgb(128,128,128);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:5.1px;color:rgb(70,153,182);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_029{font-family:Arial,serif;font-size:5.1px;color:rgb(70,153,182);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:5.6px;color:rgb(0,37,77);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:5.6px;color:rgb(0,37,77);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Courier New,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Courier New,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Courier New,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Courier New,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Courier New,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Courier New,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Courier New,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Courier New,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:8.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:8.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background1.jpg" width=612 height=792></div>
+<div style="position:absolute;left:348.36px;top:24.50px" class="cls_002"><span class="cls_002">FACTURA ELECTRÓNICA (CFDI)</span></div>
+<div style="position:absolute;left:108.29px;top:61.00px" class="cls_003"><span class="cls_003">EMISOR:</span></div>
+<div style="position:absolute;left:342.64px;top:61.00px" class="cls_003"><span class="cls_003">RECEPTOR:</span></div>
+<div style="position:absolute;left:515.02px;top:61.00px" class="cls_003"><span class="cls_003">FECHA Y HORA:</span></div>
+<div style="position:absolute;left:7.00px;top:73.00px" class="cls_004"><span class="cls_004">BCD Travel S.A. de C.V.</span></div>
+<div style="position:absolute;left:247.80px;top:73.00px" class="cls_004"><span class="cls_004">ASTRAZENECA SA DE CV</span></div>
+<div style="position:absolute;left:508.33px;top:73.00px" class="cls_004"><span class="cls_004">2019-09-20T21:13:48</span></div>
+<div style="position:absolute;left:7.00px;top:81.00px" class="cls_004"><span class="cls_004">RFC:BTR7802237U2</span></div>
+<div style="position:absolute;left:247.80px;top:81.00px" class="cls_004"><span class="cls_004">RFC:AST961231B69</span></div>
+<div style="position:absolute;left:519.02px;top:85.00px" class="cls_003"><span class="cls_003">FOLIO FISCAL</span></div>
+<div style="position:absolute;left:7.00px;top:89.00px" class="cls_004"><span class="cls_004">Arquímedes No. 130  Piso 6</span></div>
+<div style="position:absolute;left:247.80px;top:89.00px" class="cls_004"><span class="cls_004">PERIFERICO SUR 4305 PISO 5</span></div>
+<div style="position:absolute;left:7.00px;top:97.00px" class="cls_004"><span class="cls_004">Polanco, México</span></div>
+<div style="position:absolute;left:247.80px;top:97.00px" class="cls_004"><span class="cls_004">JARDINES EN LA MONTANA, MEXICO</span></div>
+<div style="position:absolute;left:7.00px;top:113.00px" class="cls_004"><span class="cls_004">Miguel Hidalgo, Ciudad de México</span></div>
+<div style="position:absolute;left:247.80px;top:113.00px" class="cls_004"><span class="cls_004">TLALPAN, CDMX</span></div>
+<div style="position:absolute;left:7.00px;top:121.00px" class="cls_004"><span class="cls_004">México, 11560</span></div>
+<div style="position:absolute;left:247.80px;top:121.00px" class="cls_004"><span class="cls_004">MEXICO, 14210</span></div>
+<div style="position:absolute;left:492.34px;top:129.00px" class="cls_004"><span class="cls_004">8A5A466E-3DA9-4AE6-8C8D-</span></div>
+<div style="position:absolute;left:7.00px;top:137.00px" class="cls_004"><span class="cls_004">Lugar de Expedición / Domicilio del establecimiento:</span></div>
+<div style="position:absolute;left:518.12px;top:137.00px" class="cls_004"><span class="cls_004">C7E252F9D571</span></div>
+<div style="position:absolute;left:7.00px;top:145.00px" class="cls_004"><span class="cls_004">Arquímedes No. 130  Piso 6 Polanco</span></div>
+<div style="position:absolute;left:7.00px;top:153.00px" class="cls_004"><span class="cls_004">Miguel Hidalgo,CP 11560 Ciudad de México</span></div>
+<div style="position:absolute;left:7.00px;top:169.00px" class="cls_004"><span class="cls_004">601 -Regimen General de Ley Personas Morales</span></div>
+<div style="position:absolute;left:88.28px;top:181.00px" class="cls_003"><span class="cls_003">METODO DE PAGO</span></div>
+<div style="position:absolute;left:311.53px;top:181.00px" class="cls_003"><span class="cls_003">No. DE SERIE CERTIFICADO</span></div>
+<div style="position:absolute;left:514.14px;top:181.00px" class="cls_003"><span class="cls_003">FOLIO FACTURA</span></div>
+<div style="position:absolute;left:63.59px;top:193.00px" class="cls_004"><span class="cls_004">PUE - Pago en una sola exhibicion</span></div>
+<div style="position:absolute;left:321.72px;top:193.00px" class="cls_004"><span class="cls_004">00001000000406033334</span></div>
+<div style="position:absolute;left:531.23px;top:193.00px" class="cls_004"><span class="cls_004">2933764</span></div>
+<div style="position:absolute;left:46.28px;top:205.00px" class="cls_003"><span class="cls_003">ORDEN DE SERVICIO - FORMA DE PAGO</span></div>
+<div style="position:absolute;left:316.64px;top:205.00px" class="cls_003"><span class="cls_003">PASAJERO   -     RECORD</span></div>
+<div style="position:absolute;left:513.02px;top:205.00px" class="cls_003"><span class="cls_003">SERIE FACTURA:</span></div>
+<div style="position:absolute;left:66.26px;top:217.00px" class="cls_004"><span class="cls_004">3348126 - 04 - Tarjeta de Credito</span></div>
+<div style="position:absolute;left:277.52px;top:217.00px" class="cls_004"><span class="cls_004">AVILA FERNANDEZ/ANGELA MARIA - UJWNEN</span></div>
+<div style="position:absolute;left:541.46px;top:217.00px" class="cls_004"><span class="cls_004">EE</span></div>
+<div style="position:absolute;left:106.29px;top:229.00px" class="cls_003"><span class="cls_003">USO CFDI</span></div>
+<div style="position:absolute;left:317.31px;top:229.00px" class="cls_003"><span class="cls_003">TIPO DE COMPROBANTE</span></div>
+<div style="position:absolute;left:528.80px;top:229.00px" class="cls_003"><span class="cls_003">VERSION</span></div>
+<div style="position:absolute;left:81.60px;top:241.00px" class="cls_004"><span class="cls_004">G03 - Gastos en general</span></div>
+<div style="position:absolute;left:348.19px;top:241.00px" class="cls_004"><span class="cls_004">I - Ingreso</span></div>
+<div style="position:absolute;left:541.24px;top:241.00px" class="cls_004"><span class="cls_004">3.3</span></div>
+<div style="position:absolute;left:7.70px;top:258.00px" class="cls_003"><span class="cls_003">CLAV PROD.</span></div>
+<div style="position:absolute;left:111.39px;top:258.00px" class="cls_003"><span class="cls_003">UNIDAD DE</span></div>
+<div style="position:absolute;left:499.15px;top:258.00px" class="cls_003"><span class="cls_003">TIPO</span></div>
+<div style="position:absolute;left:535.91px;top:258.00px" class="cls_003"><span class="cls_003">TASA</span></div>
+<div style="position:absolute;left:63.47px;top:262.00px" class="cls_003"><span class="cls_003">CANTIDAD</span></div>
+<div style="position:absolute;left:172.78px;top:262.00px" class="cls_003"><span class="cls_003">UNIDAD</span></div>
+<div style="position:absolute;left:239.91px;top:262.00px" class="cls_003"><span class="cls_003">DESCRIPCION</span></div>
+<div style="position:absolute;left:319.72px;top:262.00px" class="cls_003"><span class="cls_003">VALOR U.</span></div>
+<div style="position:absolute;left:364.39px;top:262.00px" class="cls_003"><span class="cls_003">IMPORTE</span></div>
+<div style="position:absolute;left:409.82px;top:262.00px" class="cls_003"><span class="cls_003">BASE</span></div>
+<div style="position:absolute;left:441.08px;top:262.00px" class="cls_003"><span class="cls_003">IMPUESTO</span></div>
+<div style="position:absolute;left:566.89px;top:262.00px" class="cls_003"><span class="cls_003">IMPORTE</span></div>
+<div style="position:absolute;left:21.47px;top:266.00px" class="cls_003"><span class="cls_003">SERV</span></div>
+<div style="position:absolute;left:117.83px;top:266.00px" class="cls_003"><span class="cls_003">MEDIDA</span></div>
+<div style="position:absolute;left:491.83px;top:266.00px" class="cls_003"><span class="cls_003">FACTOR</span></div>
+<div style="position:absolute;left:532.58px;top:266.00px" class="cls_003"><span class="cls_003">CUOTA</span></div>
+<div style="position:absolute;left:14.57px;top:278.00px" class="cls_004"><span class="cls_004">90121502</span></div>
+<div style="position:absolute;left:67.67px;top:278.00px" class="cls_004"><span class="cls_004">1.000000</span></div>
+<div style="position:absolute;left:126.49px;top:278.00px" class="cls_004"><span class="cls_004">E48</span></div>
+<div style="position:absolute;left:170.10px;top:278.00px" class="cls_004"><span class="cls_004">Unidad de</span></div>
+<div style="position:absolute;left:220.44px;top:278.00px" class="cls_004"><span class="cls_004">Cargos por servicio/</span></div>
+<div style="position:absolute;left:338.71px;top:278.00px" class="cls_004"><span class="cls_004">69.35</span></div>
+<div style="position:absolute;left:382.49px;top:278.00px" class="cls_004"><span class="cls_004">69.35</span></div>
+<div style="position:absolute;left:410.92px;top:278.00px" class="cls_004"><span class="cls_004">69.35</span></div>
+<div style="position:absolute;left:455.52px;top:278.00px" class="cls_004"><span class="cls_004">IVA</span></div>
+<div style="position:absolute;left:499.60px;top:278.00px" class="cls_004"><span class="cls_004">Tasa</span></div>
+<div style="position:absolute;left:539.02px;top:278.00px" class="cls_004"><span class="cls_004">0.16</span></div>
+<div style="position:absolute;left:575.10px;top:278.00px" class="cls_004"><span class="cls_004">11.09</span></div>
+<div style="position:absolute;left:12.35px;top:286.00px" class="cls_004"><span class="cls_004">Agencia de</span></div>
+<div style="position:absolute;left:174.11px;top:286.00px" class="cls_004"><span class="cls_004">Servicio</span></div>
+<div style="position:absolute;left:220.44px;top:286.00px" class="cls_004"><span class="cls_004">Service Fee ( Tasa 16% )</span></div>
+<div style="position:absolute;left:21.47px;top:294.00px" class="cls_004"><span class="cls_004">Viajes</span></div>
+<div style="position:absolute;left:428.40px;top:311.00px" class="cls_003"><span class="cls_003">SUBTOTAL</span></div>
+<div style="position:absolute;left:584.98px;top:311.00px" class="cls_004"><span class="cls_004">69.35</span></div>
+<div style="position:absolute;left:428.40px;top:323.00px" class="cls_003"><span class="cls_003">IVA</span></div>
+<div style="position:absolute;left:584.98px;top:323.00px" class="cls_004"><span class="cls_004">11.09</span></div>
+<div style="position:absolute;left:428.40px;top:335.00px" class="cls_003"><span class="cls_003">TOTAL</span></div>
+<div style="position:absolute;left:584.98px;top:335.00px" class="cls_004"><span class="cls_004">80.44</span></div>
+<div style="position:absolute;left:428.40px;top:347.00px" class="cls_003"><span class="cls_003">MONEDA</span></div>
+<div style="position:absolute;left:587.22px;top:347.00px" class="cls_004"><span class="cls_004">MXN</span></div>
+<div style="position:absolute;left:428.40px;top:359.00px" class="cls_003"><span class="cls_003">TOTAL CARGADO A</span></div>
+<div style="position:absolute;left:584.98px;top:363.00px" class="cls_004"><span class="cls_004">80.45</span></div>
+<div style="position:absolute;left:428.40px;top:367.00px" class="cls_003"><span class="cls_003">TARJ CRED</span></div>
+<div style="position:absolute;left:263.33px;top:379.00px" class="cls_003"><span class="cls_003">IMPORTE CON LETRA</span></div>
+<div style="position:absolute;left:248.65px;top:391.00px" class="cls_004"><span class="cls_004">OCHENTA PESOS 44/100 M.N.</span></div>
+<div style="position:absolute;left:275.55px;top:408.00px" class="cls_003"><span class="cls_003">SELLO DIGITAL</span></div>
+<div style="position:absolute;left:7.00px;top:420.00px" class="cls_004"><span class="cls_004">baRJRT4M4rHxsgBBOXs7klnBYvUG5fHlZEe4m9LKWsVic0N8sxNP71ATwipsRC0P0sl3i0OoPULmB76ZOt/XovHLr2ruP1zasoIRRXGAK9kKgCTP7l8fYE51OplEsLf8Qjp</span></div>
+<div style="position:absolute;left:7.00px;top:428.00px" class="cls_004"><span class="cls_004">+YqtpHvs+zYF/Ts1fDo143n69zcmJ/CR4p5gBzdEHD0KNDQ3Wbryc0o7dHRTAHnfJynvtjlPAGfDtTSDxAn1ecuo0aY7HsfoCsVjx5XhXRlYsIC9F48EBVUxZfTsQg6HWtc9</span></div>
+<div style="position:absolute;left:7.00px;top:436.00px" class="cls_004"><span class="cls_004">zhqG5o5BVIZYbliETwvIP89gM3CSv9D1I7MRQw2aJxkdbDkOYDp0+3GW/ONIeRQkhDrGXhPHjExnroQ==</span></div>
+<div style="position:absolute;left:193.78px;top:453.00px" class="cls_003"><span class="cls_003">CADENA ORIGINAL DE CERTIFICACIÓN DIGITAL DEL SAT</span></div>
+<div style="position:absolute;left:7.00px;top:465.00px" class="cls_004"><span class="cls_004">|</span></div>
+<div style="position:absolute;left:16.69px;top:465.00px" class="cls_004"><span class="cls_004">|</span></div>
+<div style="position:absolute;left:26.38px;top:465.00px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:48.27px;top:465.00px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:60.33px;top:465.00px" class="cls_004"><span class="cls_004">|</span></div>
+<div style="position:absolute;left:70.02px;top:465.00px" class="cls_004"><span class="cls_004">8</span></div>
+<div style="position:absolute;left:82.07px;top:465.00px" class="cls_004"><span class="cls_004">A</span></div>
+<div style="position:absolute;left:95.02px;top:465.00px" class="cls_004"><span class="cls_004">5</span></div>
+<div style="position:absolute;left:107.08px;top:465.00px" class="cls_004"><span class="cls_004">A</span></div>
+<div style="position:absolute;left:120.03px;top:465.00px" class="cls_004"><span class="cls_004">4</span></div>
+<div style="position:absolute;left:132.09px;top:465.00px" class="cls_004"><span class="cls_004">6</span></div>
+<div style="position:absolute;left:144.14px;top:465.00px" class="cls_004"><span class="cls_004">6</span></div>
+<div style="position:absolute;left:156.20px;top:465.00px" class="cls_004"><span class="cls_004">E</span></div>
+<div style="position:absolute;left:169.15px;top:465.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:179.42px;top:465.00px" class="cls_004"><span class="cls_004">3</span></div>
+<div style="position:absolute;left:191.48px;top:465.00px" class="cls_004"><span class="cls_004">D  A</span></div>
+<div style="position:absolute;left:217.82px;top:465.00px" class="cls_004"><span class="cls_004">9</span></div>
+<div style="position:absolute;left:229.88px;top:465.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:240.15px;top:465.00px" class="cls_004"><span class="cls_004">4</span></div>
+<div style="position:absolute;left:252.21px;top:465.00px" class="cls_004"><span class="cls_004">A  E</span></div>
+<div style="position:absolute;left:278.10px;top:465.00px" class="cls_004"><span class="cls_004">6</span></div>
+<div style="position:absolute;left:290.16px;top:465.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:300.43px;top:465.00px" class="cls_004"><span class="cls_004">8</span></div>
+<div style="position:absolute;left:312.49px;top:465.00px" class="cls_004"><span class="cls_004">C</span></div>
+<div style="position:absolute;left:325.88px;top:465.00px" class="cls_004"><span class="cls_004">8</span></div>
+<div style="position:absolute;left:337.94px;top:465.00px" class="cls_004"><span class="cls_004">D</span></div>
+<div style="position:absolute;left:351.33px;top:465.00px" class="cls_004"><span class="cls_004">-  C</span></div>
+<div style="position:absolute;left:374.99px;top:465.00px" class="cls_004"><span class="cls_004">7</span></div>
+<div style="position:absolute;left:387.05px;top:465.00px" class="cls_004"><span class="cls_004">E</span></div>
+<div style="position:absolute;left:399.99px;top:465.00px" class="cls_004"><span class="cls_004">2</span></div>
+<div style="position:absolute;left:412.05px;top:465.00px" class="cls_004"><span class="cls_004">5</span></div>
+<div style="position:absolute;left:424.11px;top:465.00px" class="cls_004"><span class="cls_004">2</span></div>
+<div style="position:absolute;left:436.17px;top:465.00px" class="cls_004"><span class="cls_004">F</span></div>
+<div style="position:absolute;left:448.67px;top:465.00px" class="cls_004"><span class="cls_004">9</span></div>
+<div style="position:absolute;left:460.73px;top:465.00px" class="cls_004"><span class="cls_004">D</span></div>
+<div style="position:absolute;left:474.11px;top:465.00px" class="cls_004"><span class="cls_004">5</span></div>
+<div style="position:absolute;left:486.17px;top:465.00px" class="cls_004"><span class="cls_004">7</span></div>
+<div style="position:absolute;left:498.23px;top:465.00px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:510.29px;top:465.00px" class="cls_004"><span class="cls_004">|</span></div>
+<div style="position:absolute;left:519.98px;top:465.00px" class="cls_004"><span class="cls_004">2</span></div>
+<div style="position:absolute;left:532.04px;top:465.00px" class="cls_004"><span class="cls_004">0</span></div>
+<div style="position:absolute;left:544.10px;top:465.00px" class="cls_004"><span class="cls_004">1</span></div>
+<div style="position:absolute;left:556.16px;top:465.00px" class="cls_004"><span class="cls_004">9</span></div>
+<div style="position:absolute;left:568.22px;top:465.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:578.49px;top:465.00px" class="cls_004"><span class="cls_004">0</span></div>
+<div style="position:absolute;left:590.55px;top:465.00px" class="cls_004"><span class="cls_004">9</span></div>
+<div style="position:absolute;left:602.61px;top:465.00px" class="cls_004"><span class="cls_004">-</span></div>
+<div style="position:absolute;left:7.00px;top:473.00px" class="cls_004"><span class="cls_004">23T10:30:45|DET080304395|baRJRT4M4rHxsgBBOXs7klnBYvUG5fHlZEe4m9LKWsVic0N8sxNP71ATwipsRC0P0sl3i0OoPULmB76ZOt/XovHLr2ruP1zasoIRRXGAK9</span></div>
+<div style="position:absolute;left:7.00px;top:481.00px" class="cls_004"><span class="cls_004">kKgCTP7l8fYE51OplEsLf8Qjp+YqtpHvs+zYF/Ts1fDo143n69zcmJ/CR4p5gBzdEHD0KNDQ3Wbryc0o7dHRTAHnfJynvtjlPAGfDtTSDxAn1ecuo0aY7HsfoCsVjx5XhXRlYs</span></div>
+<div style="position:absolute;left:7.00px;top:489.00px" class="cls_004"><span class="cls_004">IC9F48EBVUxZfTsQg6HWtc9zhqG5o5BVIZYbliETwvIP89gM3CSv9D1I7MRQw2aJxkdbDkOYDp0+3GW/ONIeRQkhDrGXhPHjExnroQ==|00001000000407371267||</span></div>
+<div style="position:absolute;left:265.86px;top:508.00px" class="cls_004"><span class="cls_004">hV5oWRiSIQutjSmfmbjEZJO03Cl80/AM13RPxThNrrScQCeMzMJLAYHT3/WC/kEzAr53uQmD</span></div>
+<div style="position:absolute;left:265.86px;top:516.00px" class="cls_004"><span class="cls_004">HkNJHNFY7NrqjPzvlshr1zJ9Z5SttiD3SqCqSQMqI6NSAHZqZdUKyvEgtx54JQOJQXzJxFlSyB</span></div>
+<div style="position:absolute;left:129.40px;top:524.00px" class="cls_003"><span class="cls_003">SELLO SAT</span></div>
+<div style="position:absolute;left:265.86px;top:524.00px" class="cls_004"><span class="cls_004">0//j1JtJIozVJTRnYkSnwzTA3uzVe2WfI5GvQttQ2OWDZRoTSqCYhWT6s7It5XOcnhdbWg89/B</span></div>
+<div style="position:absolute;left:265.86px;top:532.00px" class="cls_004"><span class="cls_004">MoLgndTWbSkVprIYi7O5vyTtb76GttsPo+hK5vmb0PMiXgpLNLaqECHACI4Neby2j4mf9L3zDZ</span></div>
+<div style="position:absolute;left:265.86px;top:540.00px" class="cls_004"><span class="cls_004">sEBzMlNfQQyFHOVFrBEO5i+1GONoua4VnyhwRe8iiYGFJKHg==</span></div>
+<div style="position:absolute;left:129.40px;top:552.00px" class="cls_003"><span class="cls_003">N° DE SERIE CERTIFICADO SAT</span></div>
+<div style="position:absolute;left:265.86px;top:552.00px" class="cls_004"><span class="cls_004">00001000000407371267</span></div>
+<div style="position:absolute;left:129.40px;top:568.00px" class="cls_003"><span class="cls_003">FECHA Y HORA CERTIFICACIÓN</span></div>
+<div style="position:absolute;left:265.86px;top:568.00px" class="cls_004"><span class="cls_004">2019-09-23T10:30:45</span></div>
+<div style="position:absolute;left:192.64px;top:586.00px" class="cls_003"><span class="cls_003">Este documento es una representación impresa de un CFDI</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background2.jpg" width=612 height=792></div>
+<div style="position:absolute;left:228.03px;top:67.00px" class="cls_005"><span class="cls_005">ELECTRONIC TICKET</span></div>
+<div style="position:absolute;left:198.02px;top:77.00px" class="cls_005"><span class="cls_005">PASSENGER ITINERARY/RECEIPT</span></div>
+<div style="position:absolute;left:78.00px;top:107.00px" class="cls_005"><span class="cls_005">NAME: AVILA FERNANDEZ/ANGELA MARIA</span></div>
+<div style="position:absolute;left:324.04px;top:117.00px" class="cls_005"><span class="cls_005">ETKT NBR: 220 6007493962</span></div>
+<div style="position:absolute;left:78.00px;top:137.00px" class="cls_005"><span class="cls_005">ISSUING AIRLINE: LUFTHANSA</span></div>
+<div style="position:absolute;left:78.00px;top:147.00px" class="cls_005"><span class="cls_005">ISSUING AGENT: BCD TRAVEL SA DE CV MEXICO MX /O1K5AWA</span></div>
+<div style="position:absolute;left:78.00px;top:157.00px" class="cls_005"><span class="cls_005">DATE OF ISSUE: 20SEP19</span></div>
+<div style="position:absolute;left:324.04px;top:157.00px" class="cls_005"><span class="cls_005">IATA: 86-901146</span></div>
+<div style="position:absolute;left:78.00px;top:177.00px" class="cls_005"><span class="cls_005">BOOKING REFERENCE: UJWNEN/AA</span></div>
+<div style="position:absolute;left:324.04px;top:177.00px" class="cls_005"><span class="cls_005">BOOKING AGENT: 7W77AWS</span></div>
+<div style="position:absolute;left:324.04px;top:187.00px" class="cls_005"><span class="cls_005">CUSTOMER NBR: 5553749600</span></div>
+<div style="position:absolute;left:324.04px;top:197.00px" class="cls_005"><span class="cls_005">TOUR CODE: 112NI</span></div>
+<div style="position:absolute;left:78.00px;top:217.00px" class="cls_005"><span class="cls_005">DATE  AIRLINE</span></div>
+<div style="position:absolute;left:240.03px;top:217.00px" class="cls_005"><span class="cls_005">FLT</span></div>
+<div style="position:absolute;left:282.03px;top:217.00px" class="cls_005"><span class="cls_005">CLASS</span></div>
+<div style="position:absolute;left:342.04px;top:217.00px" class="cls_005"><span class="cls_005">FARE BASIS</span></div>
+<div style="position:absolute;left:438.06px;top:217.00px" class="cls_005"><span class="cls_005">STATUS</span></div>
+<div style="position:absolute;left:78.00px;top:227.00px" class="cls_005"><span class="cls_005">-----------------------------------------------------------------------</span></div>
+<div style="position:absolute;left:78.00px;top:237.00px" class="cls_005"><span class="cls_005">02OCT LUFTHANSA</span></div>
+<div style="position:absolute;left:240.03px;top:237.00px" class="cls_005"><span class="cls_005">499</span></div>
+<div style="position:absolute;left:282.03px;top:237.00px" class="cls_005"><span class="cls_005">ECONOMY</span></div>
+<div style="position:absolute;left:342.04px;top:237.00px" class="cls_005"><span class="cls_005">QKX4RCMX</span></div>
+<div style="position:absolute;left:438.06px;top:237.00px" class="cls_005"><span class="cls_005">CONFIRMED</span></div>
+<div style="position:absolute;left:144.01px;top:247.00px" class="cls_005"><span class="cls_005">LV: MEXICO CITY</span></div>
+<div style="position:absolute;left:282.03px;top:247.00px" class="cls_005"><span class="cls_005">AT: 2045</span></div>
+<div style="position:absolute;left:342.04px;top:247.00px" class="cls_005"><span class="cls_005">DEPART: TERMINAL 1</span></div>
+<div style="position:absolute;left:144.01px;top:257.00px" class="cls_005"><span class="cls_005">AR: FRANKFURT</span></div>
+<div style="position:absolute;left:282.03px;top:257.00px" class="cls_005"><span class="cls_005">AT: 1445</span></div>
+<div style="position:absolute;left:342.04px;top:257.00px" class="cls_005"><span class="cls_005">ARRIVE: TERMINAL 1</span></div>
+<div style="position:absolute;left:168.02px;top:267.00px" class="cls_005"><span class="cls_005">BAGS: 1PC</span></div>
+<div style="position:absolute;left:282.03px;top:267.00px" class="cls_005"><span class="cls_005">VALID: 02OCT-02OCT</span></div>
+<div style="position:absolute;left:78.00px;top:277.00px" class="cls_005"><span class="cls_005">03OCT LUFTHANSA</span></div>
+<div style="position:absolute;left:240.03px;top:277.00px" class="cls_005"><span class="cls_005">818</span></div>
+<div style="position:absolute;left:282.03px;top:277.00px" class="cls_005"><span class="cls_005">ECONOMY</span></div>
+<div style="position:absolute;left:342.04px;top:277.00px" class="cls_005"><span class="cls_005">QKX4RCMX</span></div>
+<div style="position:absolute;left:438.06px;top:277.00px" class="cls_005"><span class="cls_005">CONFIRMED</span></div>
+<div style="position:absolute;left:144.01px;top:287.00px" class="cls_005"><span class="cls_005">LV: FRANKFURT</span></div>
+<div style="position:absolute;left:282.03px;top:287.00px" class="cls_005"><span class="cls_005">AT: 1650</span></div>
+<div style="position:absolute;left:342.04px;top:287.00px" class="cls_005"><span class="cls_005">DEPART: TERMINAL 1</span></div>
+<div style="position:absolute;left:144.01px;top:297.00px" class="cls_005"><span class="cls_005">AR: GOTHENBURG</span></div>
+<div style="position:absolute;left:252.03px;top:297.00px" class="cls_005"><span class="cls_005">GOT  AT: 1825</span></div>
+<div style="position:absolute;left:168.02px;top:307.00px" class="cls_005"><span class="cls_005">BAGS: 1PC</span></div>
+<div style="position:absolute;left:282.03px;top:307.00px" class="cls_005"><span class="cls_005">VALID: 03OCT-03OCT</span></div>
+<div style="position:absolute;left:78.00px;top:317.00px" class="cls_005"><span class="cls_005">10OCT LUFTHANSA</span></div>
+<div style="position:absolute;left:240.03px;top:317.00px" class="cls_005"><span class="cls_005">2431</span></div>
+<div style="position:absolute;left:282.03px;top:317.00px" class="cls_005"><span class="cls_005">ECONOMY</span></div>
+<div style="position:absolute;left:342.04px;top:317.00px" class="cls_005"><span class="cls_005">QKX4RCMX</span></div>
+<div style="position:absolute;left:438.06px;top:317.00px" class="cls_005"><span class="cls_005">CONFIRMED</span></div>
+<div style="position:absolute;left:144.01px;top:327.00px" class="cls_005"><span class="cls_005">LV: GOTHENBURG</span></div>
+<div style="position:absolute;left:252.03px;top:327.00px" class="cls_005"><span class="cls_005">GOT  AT: 1850</span></div>
+<div style="position:absolute;left:144.01px;top:337.00px" class="cls_005"><span class="cls_005">AR: MUNICH</span></div>
+<div style="position:absolute;left:282.03px;top:337.00px" class="cls_005"><span class="cls_005">AT: 2035  ARRIVE: TERMINAL 2</span></div>
+<div style="position:absolute;left:168.02px;top:347.00px" class="cls_005"><span class="cls_005">BAGS: 1PC</span></div>
+<div style="position:absolute;left:282.03px;top:347.00px" class="cls_005"><span class="cls_005">VALID: 10OCT-10OCT</span></div>
+<div style="position:absolute;left:78.00px;top:357.00px" class="cls_005"><span class="cls_005">10OCT LUFTHANSA</span></div>
+<div style="position:absolute;left:240.03px;top:357.00px" class="cls_005"><span class="cls_005">520</span></div>
+<div style="position:absolute;left:282.03px;top:357.00px" class="cls_005"><span class="cls_005">ECONOMY</span></div>
+<div style="position:absolute;left:342.04px;top:357.00px" class="cls_005"><span class="cls_005">QKX4RCMX</span></div>
+<div style="position:absolute;left:438.06px;top:357.00px" class="cls_005"><span class="cls_005">CONFIRMED</span></div>
+<div style="position:absolute;left:144.01px;top:367.00px" class="cls_005"><span class="cls_005">LV: MUNICH</span></div>
+<div style="position:absolute;left:282.03px;top:367.00px" class="cls_005"><span class="cls_005">AT: 2230</span></div>
+<div style="position:absolute;left:342.04px;top:367.00px" class="cls_005"><span class="cls_005">DEPART: TERMINAL 2</span></div>
+<div style="position:absolute;left:144.01px;top:377.00px" class="cls_005"><span class="cls_005">AR: MEXICO CITY</span></div>
+<div style="position:absolute;left:282.03px;top:377.00px" class="cls_005"><span class="cls_005">AT: 0405</span></div>
+<div style="position:absolute;left:342.04px;top:377.00px" class="cls_005"><span class="cls_005">ARRIVE: TERMINAL 1</span></div>
+<div style="position:absolute;left:168.02px;top:387.00px" class="cls_005"><span class="cls_005">BAGS: 1PC</span></div>
+<div style="position:absolute;left:282.03px;top:387.00px" class="cls_005"><span class="cls_005">VALID: 10OCT-10OCT</span></div>
+<div style="position:absolute;left:78.00px;top:407.00px" class="cls_005"><span class="cls_005">ENDORSEMENTS: RFC DLA 610316 ISA/-REFUNDABLE/CXLFEE/CHGFEE</span></div>
+<div style="position:absolute;left:78.00px;top:427.00px" class="cls_005"><span class="cls_005">FARE CALC: MEX LH X/FRA LH GOT708.50LH X/MUC LH MEX708.50NUC1417.00END R</span></div>
+<div style="position:absolute;left:78.00px;top:437.00px" class="cls_005"><span class="cls_005">OE1.00</span></div>
+<div style="position:absolute;left:78.00px;top:467.00px" class="cls_005"><span class="cls_005">FORM OF PAYMENT: VISA</span></div>
+<div style="position:absolute;left:78.00px;top:477.00px" class="cls_005"><span class="cls_005">FARE: USD1417.00</span></div>
+<div style="position:absolute;left:78.00px;top:487.00px" class="cls_005"><span class="cls_005">TAX: MXN10580</span></div>
+<div style="position:absolute;left:78.00px;top:507.00px" class="cls_005"><span class="cls_005">TOTAL: MXN38003</span></div>
+<div style="position:absolute;left:228.03px;top:507.00px" class="cls_005"><span class="cls_005">EQIV AMT PD: MXN27423</span></div>
+<div style="position:absolute;left:78.00px;top:527.00px" class="cls_005"><span class="cls_005">TAXES/FEES/CARRIER IMPOSED CHARGES:</span></div>
+<div style="position:absolute;left:138.01px;top:537.00px" class="cls_005"><span class="cls_005">5652YQ</span></div>
+<div style="position:absolute;left:234.03px;top:537.00px" class="cls_005"><span class="cls_005">339YR</span></div>
+<div style="position:absolute;left:318.04px;top:537.00px" class="cls_005"><span class="cls_005">1337XO</span></div>
+<div style="position:absolute;left:408.05px;top:537.00px" class="cls_005"><span class="cls_005">1108XD</span></div>
+<div style="position:absolute;left:504.07px;top:537.00px" class="cls_005"><span class="cls_005">204DE</span></div>
+<div style="position:absolute;left:144.01px;top:547.00px" class="cls_005"><span class="cls_005">875RA</span></div>
+<div style="position:absolute;left:234.03px;top:547.00px" class="cls_005"><span class="cls_005">815LJ</span></div>
+<div style="position:absolute;left:324.04px;top:547.00px" class="cls_005"><span class="cls_005">250YA</span></div>
+<div style="position:absolute;left:78.00px;top:637.00px" class="cls_005"><span class="cls_005">DE CONFORMIDAD A LA REGLA 2.7.1.25 PUBLICADA EN LA RESOLUCION MISCELANEA</span></div>
+<div style="position:absolute;left:78.00px;top:647.00px" class="cls_005"><span class="cls_005">FISCAL PARA 2016 PAGO DE CONTRIBUCIONES Y GASTOS EN TRANSPORTE AEREO DE</span></div>
+<div style="position:absolute;left:78.00px;top:657.00px" class="cls_005"><span class="cls_005">PASAJE Y CARGA.</span></div>
+<div style="position:absolute;left:78.00px;top:667.00px" class="cls_005"><span class="cls_005">PARA LOS EFECTOS DE LOS ARTICULOS 29 Y 29-A DEL CFF, ASI COMO 18,</span></div>
+<div style="position:absolute;left:78.00px;top:677.00px" class="cls_005"><span class="cls_005">FRACCION VIII Y 90, SEXTO PARRAFO DE LA LEY DEL ISR, LOS CONTRIBUYENTES</span></div>
+<div style="position:absolute;left:78.00px;top:687.00px" class="cls_005"><span class="cls_005">QUE PRESTEN SERVICIOS DE TRANSPORTE AEREO DE PERSONAS O DE BIENES,</span></div>
+<div style="position:absolute;left:78.00px;top:697.00px" class="cls_005"><span class="cls_005">NACIONAL O INTERNATIONAL, EXPEDIRAN POR LOS INGRESOS PERCIBIDOS POR</span></div>
+<div style="position:absolute;left:78.00px;top:707.00px" class="cls_005"><span class="cls_005">DICHO CONCEPTO EL CFDI CORRESPONDIENTE.</span></div>
+<div style="position:absolute;left:78.00px;top:717.00px" class="cls_005"><span class="cls_005">CUANDO DENTRO DE LAS CANTIDADES QUE SE CARGUEN O COBREN AL ADQUIRENTE</span></div>
+<div style="position:absolute;left:78.00px;top:727.00px" class="cls_005"><span class="cls_005">DE DICHOS SERVICIOS DE TRANSPORTE, ESTEN INTEGRADAS CANTIDADES COBRADAS</span></div>
+<div style="position:absolute;left:78.00px;top:737.00px" class="cls_005"><span class="cls_005">POR CUENTA DE TERCEROS CON LOS QUE TENGA UNA RELACION JURIDICA Y QUE NO</span></div>
+<div style="position:absolute;left:78.00px;top:747.00px" class="cls_005"><span class="cls_005">SEAN ATRIBUIBLES COMO INGRESOS AL TRANSPORTISTA, ESTOS PRESTADORES DE</span></div>
+<div style="position:absolute;left:78.00px;top:757.00px" class="cls_005"><span class="cls_005">SERVICIOS DEBERAN UTILIZAR EL COMPLEMENTO QUE AL EFECTO PUBLIQUE EL SAT</span></div>
+<div style="position:absolute;left:78.00px;top:767.00px" class="cls_005"><span class="cls_005">EN SU PORTAL,EN EL CUAL IDENTIFICARAN LAS CANTIDADES QUE CORRESPONDAN A</span></div>
+<div style="position:absolute;left:78.00px;top:777.00px" class="cls_005"><span class="cls_005">CONTRIBUCIONES FEDERALES Y A OTROS CARGOS O COBROS, INCLUYENDO PARA</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background3.jpg" width=612 height=792></div>
+<div style="position:absolute;left:78.00px;top:67.00px" class="cls_005"><span class="cls_005">TALES EFECTOS LA IDENTIFICACION DEL TERCERO MEDIANTE EL USO DEL CODIGO</span></div>
+<div style="position:absolute;left:78.00px;top:77.00px" class="cls_005"><span class="cls_005">IATA (INTERNATIONAL AIR TRANSPORT ASSOCIATION).</span></div>
+<div style="position:absolute;left:78.00px;top:97.00px" class="cls_005"><span class="cls_005">EL TRASLADO DE CIERTOS MATERIALES PELIGROSOS COMO AEROSOLES,</span></div>
+<div style="position:absolute;left:78.00px;top:107.00px" class="cls_005"><span class="cls_005">PIROTECNIA Y LIQUIDOS INFLAMABLES, A BORDO DE LA AERONAVE ESTA</span></div>
+<div style="position:absolute;left:78.00px;top:117.00px" class="cls_005"><span class="cls_005">PROHIBIDO. SI USTED NO COMPRENDE ESTAS RESTRICCIONES, PUEDE OBTENER</span></div>
+<div style="position:absolute;left:78.00px;top:127.00px" class="cls_005"><span class="cls_005">MAS INFORMACION CONSULTANDO A LA AEROLINEA.</span></div>
+<div style="position:absolute;left:78.00px;top:147.00px" class="cls_005"><span class="cls_005">COMUNICACION SOBRE PROTECCION DE DATOS: SUS DATOS PERSONALES SE</span></div>
+<div style="position:absolute;left:78.00px;top:157.00px" class="cls_005"><span class="cls_005">PROCESARAN DE ACUERDO CON LA POLITICA DE PRIVACIDAD APLICABLE DEL</span></div>
+<div style="position:absolute;left:78.00px;top:167.00px" class="cls_005"><span class="cls_005">OPERADOR Y, SI SU RESERVA SE REALIZA MEDIANTE UN PROVEEDOR DE SISTEMA DE</span></div>
+<div style="position:absolute;left:78.00px;top:177.00px" class="cls_005"><span class="cls_005">RESERVA (GDS), CONFORME A SU POLITICA DE PRIVACIDAD, QUE ESTARA</span></div>
+<div style="position:absolute;left:78.00px;top:187.00px" class="cls_005"><span class="cls_005">DISPONIBLE EN </span><A HREF="http://www.iatatravelcenter.com/privacy/">HTTP://WWW.IATATRAVELCENTER.COM/PRIVACY</A>, O EN EL OPERADOR</div>
+<div style="position:absolute;left:78.00px;top:197.00px" class="cls_005"><span class="cls_005">O GDS DIRECTAMENTE. DEBE LEER ESTA DOCUMENTACION, QUE SE APLICA A SU</span></div>
+<div style="position:absolute;left:78.00px;top:207.00px" class="cls_005"><span class="cls_005">RESERVA Y ESPECIFICA, POR EJEMPLO, COMO SE RECOPILAN, ALMACENAN,</span></div>
+<div style="position:absolute;left:78.00px;top:217.00px" class="cls_005"><span class="cls_005">UTILIZAN, REVELAN Y TRANSFIEREN SUS DATOS PERSONALES</span></div>
+<div style="position:absolute;left:78.00px;top:237.00px" class="cls_005"><span class="cls_005">DATA PROTECTION NOTICE: YOUR PERSONAL DATA WILL BE PROCESSED IN</span></div>
+<div style="position:absolute;left:78.00px;top:247.00px" class="cls_005"><span class="cls_005">ACCORDANCE WITH THE APPLICABLE CARRIERS PRIVACY POLICY AND, IF YOUR</span></div>
+<div style="position:absolute;left:78.00px;top:257.00px" class="cls_005"><span class="cls_005">BOOKING IS MADE VIA A RESERVATION SYSTEM PROVIDER (GDS), WITH ITS</span></div>
+<div style="position:absolute;left:78.00px;top:267.00px" class="cls_005"><span class="cls_005">PRIVACY POLICY. THESE ARE AVAILABLE AT</span></div>
+<div style="position:absolute;left:78.00px;top:277.00px" class="cls_005"><span class="cls_005"> </span><A HREF="http://www.iatatravelcenter.com/privacy/">HTTP://WWW.IATATRAVELCENTER.COM/PRIVACY</A> OR FROM THE CARRIER OR GDS</div>
+<div style="position:absolute;left:78.00px;top:287.00px" class="cls_005"><span class="cls_005">DIRECTLY. YOU SHOULD READ THIS DOCUMENTATION, WHICH APPLIES TO YOUR</span></div>
+<div style="position:absolute;left:78.00px;top:297.00px" class="cls_005"><span class="cls_005">BOOKING AND SPECIFIES, FOR EXAMPLE, HOW YOUR PERSONAL DATA IS COLLECTED,</span></div>
+<div style="position:absolute;left:78.00px;top:307.00px" class="cls_005"><span class="cls_005">STORED, USED, DISCLOSED AND TRANSFERRED.</span></div>
+<div style="position:absolute;left:270.03px;top:327.00px" class="cls_005"><span class="cls_005">NOTICE</span></div>
+<div style="position:absolute;left:78.00px;top:337.00px" class="cls_005"><span class="cls_005">CARRIAGE AND OTHER SERVICES PROVIDED BY THE CARRIER ARE SUBJECT TO</span></div>
+<div style="position:absolute;left:78.00px;top:347.00px" class="cls_005"><span class="cls_005">CONDITIONS OF CARRIAGE, WHICH ARE HEREBY INCORPORATED BY REFERENCE.</span></div>
+<div style="position:absolute;left:78.00px;top:357.00px" class="cls_005"><span class="cls_005">THESE CONDITIONS MAY BE OBTAINED FROM THE ISSUING CARRIER. PASSENGERS ON</span></div>
+<div style="position:absolute;left:78.00px;top:367.00px" class="cls_005"><span class="cls_005">A JOURNEY INVOLVING AN ULTIMATE DESTINATION OR A STOP IN A COUNTRY OTHER</span></div>
+<div style="position:absolute;left:78.00px;top:377.00px" class="cls_005"><span class="cls_005">THAN THE COUNTRY OF DEPARTURE ARE ADVISED THAT INTERNATIONAL TREATIES</span></div>
+<div style="position:absolute;left:78.00px;top:387.00px" class="cls_005"><span class="cls_005">KNOWN AS THE MONTREAL CONVENTION, OR ITS PREDECESSOR, THE WARSAW</span></div>
+<div style="position:absolute;left:78.00px;top:397.00px" class="cls_005"><span class="cls_005">CONVENTION, INCLUDING ITS AMENDMENTS /THE WARSAW CONVENTION SYSTEM/</span></div>
+<div style="position:absolute;left:78.00px;top:407.00px" class="cls_005"><span class="cls_005">MAY APPLY TO THE ENTIRE JOURNEY, INCLUDING ANY PORTION THEREOF WITHIN A</span></div>
+<div style="position:absolute;left:78.00px;top:417.00px" class="cls_005"><span class="cls_005">COUNTRY. FOR SUCH PASSENGERS, THE APPLICABLE TREATY, INCLUDING SPECIAL</span></div>
+<div style="position:absolute;left:78.00px;top:427.00px" class="cls_005"><span class="cls_005">CONTRACTS OF CARRIAGE EMBODIED IN ANY APPLICABLE TARIFFS, GOVERNS AND</span></div>
+<div style="position:absolute;left:78.00px;top:437.00px" class="cls_005"><span class="cls_005">MAY LIMIT THE LIABILITY OF THE CARRIER. CHECK WITH YOUR CARRIER FOR MORE</span></div>
+<div style="position:absolute;left:84.00px;top:447.00px" class="cls_005"><span class="cls_005">INFORMATION.</span></div>
+<div style="position:absolute;left:78.00px;top:477.00px" class="cls_005"><span class="cls_005">CONDICIONES DEL CONTRATO Y OTROS AVISOS IMPORTANTES</span></div>
+<div style="position:absolute;left:78.00px;top:487.00px" class="cls_005"><span class="cls_005">EL TRANSPORTE Y OTROS SERVICIOS PROPORCIONADOS POR LA AEROLINEA</span></div>
+<div style="position:absolute;left:78.00px;top:497.00px" class="cls_005"><span class="cls_005">TRANSPORTISTA ESTAN CONFORME A LAS CONDICIONES DEL CONTRATO QUE SON</span></div>
+<div style="position:absolute;left:78.00px;top:507.00px" class="cls_005"><span class="cls_005">INCORPORADAS POR ESTE MEDIO PARA REFERENCIA. ESTAS CONDICIONES SE PUEDEN</span></div>
+<div style="position:absolute;left:78.00px;top:517.00px" class="cls_005"><span class="cls_005">OBTENER DE LA AEROLINEA EMISORA. SE INFORMA A LOS PASAJEROS QUE REALICEN</span></div>
+<div style="position:absolute;left:78.00px;top:527.00px" class="cls_005"><span class="cls_005">VIAJES EN LOS QUE EL PUNTO DE DESTINO O UNA O MAS ESCALAS INTERMEDIAS SE</span></div>
+<div style="position:absolute;left:78.00px;top:537.00px" class="cls_005"><span class="cls_005">EFECTUEN EN UN PAIS QUE NO SEA EL DE PARTIDA DE SU VUELO, QUE PUEDEN SER</span></div>
+<div style="position:absolute;left:78.00px;top:547.00px" class="cls_005"><span class="cls_005">DE APLICACION A LA TOTALIDAD DE SU VIAJE, INCLUIDA CUALQUIER PARTE DEL</span></div>
+<div style="position:absolute;left:78.00px;top:557.00px" class="cls_005"><span class="cls_005">MISMO DENTRO DE UN PAIS, LOS TRATADOS INTERNACIONALES COMO LA CONVENCION</span></div>
+<div style="position:absolute;left:78.00px;top:567.00px" class="cls_005"><span class="cls_005">DE MONTREAL O SU PREDECESOR LA CONVENCION DE VARSOVIA, INCLUYENDO SUS</span></div>
+<div style="position:absolute;left:78.00px;top:577.00px" class="cls_005"><span class="cls_005">MODIFICACIONES /EL SISTEMA DE CONVENCION DE VARSOVIA/. EN EL CASO DE</span></div>
+<div style="position:absolute;left:78.00px;top:587.00px" class="cls_005"><span class="cls_005">AQUELLOS PASAJEROS, EL TRATADO APLICABLE, INCLUYENDO LAS CONDICIONES</span></div>
+<div style="position:absolute;left:78.00px;top:597.00px" class="cls_005"><span class="cls_005">ESPECIALES DEL TRANSPORTE INCORPORADAS A CUALQUIER TARIFA APLICABLE,</span></div>
+<div style="position:absolute;left:78.00px;top:607.00px" class="cls_005"><span class="cls_005">RIGE Y PUEDE LIMITAR LA RESPONSABILIDAD DEL TRANSPORTISTA. SI DESEA</span></div>
+<div style="position:absolute;left:78.00px;top:617.00px" class="cls_005"><span class="cls_005">OBTENER MAS INFORMACION CONSULTE CON LA AEROLINEA EMISORA.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:791px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background4.jpg" width=612 height=791></div>
+<div style="position:absolute;left:448.62px;top:19.63px" class="cls_006"><span class="cls_006">Fecha de impresión: 27/09/2019 11:23:45 Página: 1</span></div>
+<div style="position:absolute;left:30.60px;top:87.64px" class="cls_007"><span class="cls_007">Datos fiscales</span></div>
+<div style="position:absolute;left:398.98px;top:87.64px" class="cls_007"><span class="cls_007">Datos de timbrado</span></div>
+<div style="position:absolute;left:25.79px;top:99.04px" class="cls_008"><span class="cls_008">Serie / folio</span></div>
+<div style="position:absolute;left:99.44px;top:99.04px" class="cls_006"><span class="cls_006">2206007493962</span></div>
+<div style="position:absolute;left:209.92px;top:99.16px" class="cls_008"><span class="cls_008">Divisa</span></div>
+<div style="position:absolute;left:280.81px;top:100.72px" class="cls_006"><span class="cls_006">Peso Mexicano</span></div>
+<div style="position:absolute;left:394.05px;top:100.72px" class="cls_008"><span class="cls_008">Certificado SAT</span></div>
+<div style="position:absolute;left:450.54px;top:100.72px" class="cls_006"><span class="cls_006">00001000000404477432</span></div>
+<div style="position:absolute;left:25.79px;top:110.31px" class="cls_008"><span class="cls_008">F. emisión comprobante</span></div>
+<div style="position:absolute;left:99.44px;top:110.31px" class="cls_006"><span class="cls_006">27/09/2019 11:23:30</span></div>
+<div style="position:absolute;left:209.92px;top:110.31px" class="cls_008"><span class="cls_008">Tasa de cambio</span></div>
+<div style="position:absolute;left:280.81px;top:111.75px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:394.05px;top:111.75px" class="cls_008"><span class="cls_008">Folio fiscal</span></div>
+<div style="position:absolute;left:450.54px;top:111.75px" class="cls_006"><span class="cls_006">D195954B-D69F-4378-9649-A05AC92271F9</span></div>
+<div style="position:absolute;left:25.79px;top:121.71px" class="cls_008"><span class="cls_008">Tipo comprobante</span></div>
+<div style="position:absolute;left:99.44px;top:121.71px" class="cls_006"><span class="cls_006">Ingreso</span></div>
+<div style="position:absolute;left:209.92px;top:121.71px" class="cls_008"><span class="cls_008">Certificado emisor</span></div>
+<div style="position:absolute;left:280.81px;top:123.15px" class="cls_006"><span class="cls_006">00001000000408101781</span></div>
+<div style="position:absolute;left:394.05px;top:123.15px" class="cls_008"><span class="cls_008">F. certif. CFDI</span></div>
+<div style="position:absolute;left:450.78px;top:123.15px" class="cls_006"><span class="cls_006">27/09/2019 11:23:31</span></div>
+<div style="position:absolute;left:25.79px;top:132.98px" class="cls_008"><span class="cls_008">Versión comprobante</span></div>
+<div style="position:absolute;left:99.44px;top:132.98px" class="cls_006"><span class="cls_006">3.3</span></div>
+<div style="position:absolute;left:209.92px;top:132.98px" class="cls_008"><span class="cls_008">Forma de pago</span></div>
+<div style="position:absolute;left:280.81px;top:132.98px" class="cls_006"><span class="cls_006">04 - Tarjeta de crédito</span></div>
+<div style="position:absolute;left:25.79px;top:144.38px" class="cls_008"><span class="cls_008">Condiciones de pago</span></div>
+<div style="position:absolute;left:30.83px;top:159.49px" class="cls_007"><span class="cls_007">Método de pago</span></div>
+<div style="position:absolute;left:25.79px;top:169.81px" class="cls_008"><span class="cls_008">Método de pago</span></div>
+<div style="position:absolute;left:102.20px;top:169.81px" class="cls_006"><span class="cls_006">PUE - Pago en una sola exhibición</span></div>
+<div style="position:absolute;left:30.83px;top:187.80px" class="cls_007"><span class="cls_007">Régimen fiscal / Lugar de expedición</span></div>
+<div style="position:absolute;left:25.79px;top:199.92px" class="cls_008"><span class="cls_008">Régimen fiscal</span></div>
+<div style="position:absolute;left:102.20px;top:198.12px" class="cls_006"><span class="cls_006">General de Ley Personas Morales</span></div>
+<div style="position:absolute;left:25.79px;top:209.39px" class="cls_008"><span class="cls_008">Lugar de expedición</span></div>
+<div style="position:absolute;left:102.20px;top:209.39px" class="cls_006"><span class="cls_006">11000</span></div>
+<div style="position:absolute;left:30.83px;top:225.11px" class="cls_007"><span class="cls_007">Cfdi relacionados</span></div>
+<div style="position:absolute;left:30.83px;top:238.54px" class="cls_007"><span class="cls_007">Emisor</span></div>
+<div style="position:absolute;left:317.64px;top:238.54px" class="cls_007"><span class="cls_007">Receptor</span></div>
+<div style="position:absolute;left:25.79px;top:252.22px" class="cls_008"><span class="cls_008">RFC</span></div>
+<div style="position:absolute;left:62.62px;top:252.10px" class="cls_006"><span class="cls_006">DLA610316ISA</span></div>
+<div style="position:absolute;left:311.88px;top:252.10px" class="cls_008"><span class="cls_008">RFC</span></div>
+<div style="position:absolute;left:345.94px;top:252.10px" class="cls_006"><span class="cls_006">AST961231B69</span></div>
+<div style="position:absolute;left:25.79px;top:263.37px" class="cls_008"><span class="cls_008">Nombre</span></div>
+<div style="position:absolute;left:62.62px;top:264.09px" class="cls_006"><span class="cls_006">DEUTSCHE LUFTHANSA AKTIENGESELLSCHAFT</span></div>
+<div style="position:absolute;left:311.88px;top:264.09px" class="cls_008"><span class="cls_008">Nombre</span><span class="cls_006">    ASTRAZENECA SA DE CV</span></div>
+<div style="position:absolute;left:428.71px;top:264.09px" class="cls_008"><span class="cls_008">Uso cfdi</span></div>
+<div style="position:absolute;left:513.16px;top:264.09px" class="cls_006"><span class="cls_006">Gastos en general</span></div>
+<div style="position:absolute;left:62.62px;top:270.93px" class="cls_006"><span class="cls_006">SOCIEDAD ALEMANA DE AVIACION SA</span></div>
+<div style="position:absolute;left:311.88px;top:279.33px" class="cls_008"><span class="cls_008">Dirección</span></div>
+<div style="position:absolute;left:345.94px;top:281.12px" class="cls_006"><span class="cls_006">PERIFERICO SUR Nº Ext:</span></div>
+<div style="position:absolute;left:345.94px;top:287.96px" class="cls_006"><span class="cls_006">4305 PISO 5 Nº Int: PISO 5</span></div>
+<div style="position:absolute;left:311.88px;top:295.64px" class="cls_008"><span class="cls_008">Colonia</span></div>
+<div style="position:absolute;left:345.94px;top:295.64px" class="cls_006"><span class="cls_006">JARDINES EN LA</span></div>
+<div style="position:absolute;left:345.94px;top:302.48px" class="cls_006"><span class="cls_006">MONTANA</span></div>
+<div style="position:absolute;left:311.88px;top:310.15px" class="cls_008"><span class="cls_008">Municipio</span><span class="cls_006">  TLALPAN C.P.: 14210</span></div>
+<div style="position:absolute;left:311.88px;top:321.43px" class="cls_008"><span class="cls_008">Estado</span></div>
+<div style="position:absolute;left:345.94px;top:321.43px" class="cls_006"><span class="cls_006">CDMX</span></div>
+<div style="position:absolute;left:25.79px;top:332.70px" class="cls_008"><span class="cls_008">País</span></div>
+<div style="position:absolute;left:62.62px;top:332.70px" class="cls_006"><span class="cls_006">MX</span></div>
+<div style="position:absolute;left:311.88px;top:332.70px" class="cls_008"><span class="cls_008">País</span></div>
+<div style="position:absolute;left:345.94px;top:332.70px" class="cls_006"><span class="cls_006">MX</span></div>
+<div style="position:absolute;left:23.39px;top:352.26px" class="cls_009"><span class="cls_009">Detalle comprobante</span></div>
+<div style="position:absolute;left:73.89px;top:364.85px" class="cls_008"><span class="cls_008">Unidad</span></div>
+<div style="position:absolute;left:133.39px;top:364.61px" class="cls_008"><span class="cls_008">Clave</span></div>
+<div style="position:absolute;left:163.14px;top:364.61px" class="cls_008"><span class="cls_008">Clave</span></div>
+<div style="position:absolute;left:22.91px;top:368.09px" class="cls_008"><span class="cls_008">Nº Id.</span></div>
+<div style="position:absolute;left:105.32px;top:368.09px" class="cls_008"><span class="cls_008">Cantidad</span></div>
+<div style="position:absolute;left:194.56px;top:367.73px" class="cls_008"><span class="cls_008">Descripción</span></div>
+<div style="position:absolute;left:279.37px;top:368.09px" class="cls_008"><span class="cls_008">Tipo imp.</span></div>
+<div style="position:absolute;left:339.11px;top:368.09px" class="cls_008"><span class="cls_008">Base  Tasa/Cuota</span></div>
+<div style="position:absolute;left:434.71px;top:368.09px" class="cls_008"><span class="cls_008">Monto imp.    Descuento</span></div>
+<div style="position:absolute;left:517.24px;top:368.09px" class="cls_008"><span class="cls_008">Valor uni.</span></div>
+<div style="position:absolute;left:566.66px;top:368.09px" class="cls_008"><span class="cls_008">Importe</span></div>
+<div style="position:absolute;left:73.89px;top:371.69px" class="cls_008"><span class="cls_008">de</span></div>
+<div style="position:absolute;left:133.39px;top:371.45px" class="cls_008"><span class="cls_008">prod.</span></div>
+<div style="position:absolute;left:163.14px;top:371.45px" class="cls_008"><span class="cls_008">unidad</span></div>
+<div style="position:absolute;left:73.89px;top:378.53px" class="cls_008"><span class="cls_008">medida</span></div>
+<div style="position:absolute;left:22.91px;top:387.04px" class="cls_006"><span class="cls_006">2206007493962</span></div>
+<div style="position:absolute;left:68.25px;top:387.04px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:387.04px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:387.04px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:387.04px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:387.04px" class="cls_006"><span class="cls_006">Tarifa del boleto comprado el</span></div>
+<div style="position:absolute;left:279.37px;top:387.04px" class="cls_008"><span class="cls_008">Traslado</span></div>
+<div style="position:absolute;left:330.11px;top:387.04px" class="cls_006"><span class="cls_006">8,356.25</span></div>
+<div style="position:absolute;left:358.66px;top:387.04px" class="cls_006"><span class="cls_006">Tasa   IVA</span></div>
+<div style="position:absolute;left:396.92px;top:387.04px" class="cls_006"><span class="cls_006">0.1600</span></div>
+<div style="position:absolute;left:443.35px;top:387.04px" class="cls_006"><span class="cls_006">1,337.00</span></div>
+<div style="position:absolute;left:497.57px;top:387.04px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:517.96px;top:387.04px" class="cls_006"><span class="cls_006">33,414.00</span></div>
+<div style="position:absolute;left:564.38px;top:387.04px" class="cls_006"><span class="cls_006">33,414.00</span></div>
+<div style="position:absolute;left:192.88px;top:393.88px" class="cls_006"><span class="cls_006">día 20/09/19</span></div>
+<div style="position:absolute;left:38.86px;top:405.28px" class="cls_008"><span class="cls_008">Parte</span></div>
+<div style="position:absolute;left:38.86px;top:412.71px" class="cls_008"><span class="cls_008">No. identificación</span></div>
+<div style="position:absolute;left:194.56px;top:412.71px" class="cls_008"><span class="cls_008">Descripción</span></div>
+<div style="position:absolute;left:332.99px;top:412.71px" class="cls_008"><span class="cls_008">Cantidad</span></div>
+<div style="position:absolute;left:362.62px;top:412.71px" class="cls_008"><span class="cls_008">Unidad</span></div>
+<div style="position:absolute;left:463.86px;top:412.71px" class="cls_008"><span class="cls_008">Valor unitario</span></div>
+<div style="position:absolute;left:565.58px;top:412.71px" class="cls_008"><span class="cls_008">Importe</span></div>
+<div style="position:absolute;left:192.88px;top:424.47px" class="cls_006"><span class="cls_006">TARIFA</span></div>
+<div style="position:absolute;left:347.02px;top:424.47px" class="cls_006"><span class="cls_006">1.00</span></div>
+<div style="position:absolute;left:362.62px;top:424.47px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:475.85px;top:424.47px" class="cls_006"><span class="cls_006">27,423.00</span></div>
+<div style="position:absolute;left:560.90px;top:424.47px" class="cls_006"><span class="cls_006">27,423.00</span></div>
+<div style="position:absolute;left:192.88px;top:438.74px" class="cls_006"><span class="cls_006">YQ</span></div>
+<div style="position:absolute;left:347.02px;top:438.74px" class="cls_006"><span class="cls_006">1.00</span></div>
+<div style="position:absolute;left:362.62px;top:438.74px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:479.09px;top:438.74px" class="cls_006"><span class="cls_006">5,652.00</span></div>
+<div style="position:absolute;left:564.14px;top:438.74px" class="cls_006"><span class="cls_006">5,652.00</span></div>
+<div style="position:absolute;left:192.88px;top:453.02px" class="cls_006"><span class="cls_006">YR</span></div>
+<div style="position:absolute;left:347.02px;top:453.02px" class="cls_006"><span class="cls_006">1.00</span></div>
+<div style="position:absolute;left:362.62px;top:453.02px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:484.13px;top:453.02px" class="cls_006"><span class="cls_006">339.00</span></div>
+<div style="position:absolute;left:569.18px;top:453.02px" class="cls_006"><span class="cls_006">339.00</span></div>
+<div style="position:absolute;left:68.25px;top:466.57px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:466.57px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:466.57px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:466.57px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:466.57px" class="cls_006"><span class="cls_006">XD</span></div>
+<div style="position:absolute;left:341.87px;top:466.57px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:396.92px;top:466.57px" class="cls_006"><span class="cls_006">0.0000</span></div>
+<div style="position:absolute;left:455.10px;top:466.57px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:497.57px;top:466.57px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:521.20px;top:466.57px" class="cls_006"><span class="cls_006">1,108.00</span></div>
+<div style="position:absolute;left:567.62px;top:466.57px" class="cls_006"><span class="cls_006">1,108.00</span></div>
+<div style="position:absolute;left:68.25px;top:483.49px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:483.49px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:483.49px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:483.49px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:483.49px" class="cls_006"><span class="cls_006">LJ</span></div>
+<div style="position:absolute;left:341.87px;top:483.49px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:396.92px;top:483.49px" class="cls_006"><span class="cls_006">0.0000</span></div>
+<div style="position:absolute;left:455.10px;top:483.49px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:497.57px;top:483.49px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:526.23px;top:483.49px" class="cls_006"><span class="cls_006">815.00</span></div>
+<div style="position:absolute;left:572.66px;top:483.49px" class="cls_006"><span class="cls_006">815.00</span></div>
+<div style="position:absolute;left:68.25px;top:500.52px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:500.52px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:500.52px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:500.52px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:500.52px" class="cls_006"><span class="cls_006">DE</span></div>
+<div style="position:absolute;left:341.87px;top:500.52px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:396.92px;top:500.52px" class="cls_006"><span class="cls_006">0.0000</span></div>
+<div style="position:absolute;left:455.10px;top:500.52px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:497.57px;top:500.52px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:526.23px;top:500.52px" class="cls_006"><span class="cls_006">204.00</span></div>
+<div style="position:absolute;left:572.66px;top:500.52px" class="cls_006"><span class="cls_006">204.00</span></div>
+<div style="position:absolute;left:68.25px;top:517.55px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:517.55px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:517.55px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:517.55px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:517.55px" class="cls_006"><span class="cls_006">YA</span></div>
+<div style="position:absolute;left:341.87px;top:517.55px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:396.92px;top:517.55px" class="cls_006"><span class="cls_006">0.0000</span></div>
+<div style="position:absolute;left:455.10px;top:517.55px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:497.57px;top:517.55px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:526.23px;top:517.55px" class="cls_006"><span class="cls_006">250.00</span></div>
+<div style="position:absolute;left:572.66px;top:517.55px" class="cls_006"><span class="cls_006">250.00</span></div>
+<div style="position:absolute;left:68.25px;top:534.59px" class="cls_006"><span class="cls_006">No aplica</span></div>
+<div style="position:absolute;left:123.31px;top:534.59px" class="cls_006"><span class="cls_006">1</span></div>
+<div style="position:absolute;left:133.39px;top:534.59px" class="cls_006"><span class="cls_006">78111500</span></div>
+<div style="position:absolute;left:163.14px;top:534.59px" class="cls_006"><span class="cls_006">E48</span></div>
+<div style="position:absolute;left:192.88px;top:534.59px" class="cls_006"><span class="cls_006">RA</span></div>
+<div style="position:absolute;left:341.87px;top:534.59px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:396.92px;top:534.59px" class="cls_006"><span class="cls_006">0.0000</span></div>
+<div style="position:absolute;left:455.10px;top:534.59px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:497.57px;top:534.59px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:526.23px;top:534.59px" class="cls_006"><span class="cls_006">875.00</span></div>
+<div style="position:absolute;left:572.66px;top:534.59px" class="cls_006"><span class="cls_006">875.00</span></div>
+<div style="position:absolute;left:31.43px;top:557.74px" class="cls_007"><span class="cls_007">Totales</span></div>
+<div style="position:absolute;left:201.28px;top:569.85px" class="cls_007"><span class="cls_007">Desglose de impuestos trasladados</span></div>
+<div style="position:absolute;left:387.33px;top:570.57px" class="cls_008"><span class="cls_008">Subtotal</span></div>
+<div style="position:absolute;left:560.06px;top:570.57px" class="cls_006"><span class="cls_006">36,666.00</span></div>
+<div style="position:absolute;left:216.76px;top:581.25px" class="cls_006"><span class="cls_006">IVA</span></div>
+<div style="position:absolute;left:235.47px;top:580.65px" class="cls_006"><span class="cls_006">Tasa (16 %): 1,337.00</span></div>
+<div style="position:absolute;left:387.33px;top:580.65px" class="cls_008"><span class="cls_008">Descuento</span></div>
+<div style="position:absolute;left:575.05px;top:580.65px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:387.33px;top:591.32px" class="cls_008"><span class="cls_008">Total impuestos trasladados</span></div>
+<div style="position:absolute;left:563.30px;top:591.32px" class="cls_006"><span class="cls_006">1,337.00</span></div>
+<div style="position:absolute;left:387.33px;top:600.92px" class="cls_008"><span class="cls_008">Total impuestos retenidos</span></div>
+<div style="position:absolute;left:575.05px;top:600.92px" class="cls_006"><span class="cls_006">0.00</span></div>
+<div style="position:absolute;left:387.33px;top:610.52px" class="cls_011"><span class="cls_011">TOTAL</span></div>
+<div style="position:absolute;left:549.74px;top:610.28px" class="cls_012"><span class="cls_012">38,003.00</span></div>
+<div style="position:absolute;left:37.07px;top:615.31px" class="cls_007"><span class="cls_007">Importe con letra</span></div>
+<div style="position:absolute;left:46.30px;top:627.31px" class="cls_006"><span class="cls_006">TREINTA Y OCHO MIL TRES PESOS</span></div>
+<div style="position:absolute;left:153.95px;top:627.31px" class="cls_006"><span class="cls_006">00/100 M.N.</span></div>
+<div style="position:absolute;left:27.11px;top:651.18px" class="cls_007"><span class="cls_007">Complemento de aerolíneas</span></div>
+<div style="position:absolute;left:31.43px;top:664.01px" class="cls_008"><span class="cls_008">TUA</span></div>
+<div style="position:absolute;left:102.44px;top:664.01px" class="cls_006"><span class="cls_006">1,108.00</span></div>
+<div style="position:absolute;left:31.43px;top:676.73px" class="cls_008"><span class="cls_008">Total cargos</span></div>
+<div style="position:absolute;left:102.20px;top:676.73px" class="cls_006"><span class="cls_006">2,144.00</span></div>
+<div style="position:absolute;left:31.43px;top:688.73px" class="cls_008"><span class="cls_008">Código cargo</span></div>
+<div style="position:absolute;left:201.28px;top:688.73px" class="cls_008"><span class="cls_008">Importe</span></div>
+<div style="position:absolute;left:31.43px;top:699.88px" class="cls_006"><span class="cls_006">LJ</span></div>
+<div style="position:absolute;left:201.28px;top:699.88px" class="cls_006"><span class="cls_006">815.00</span></div>
+<div style="position:absolute;left:31.43px;top:711.40px" class="cls_006"><span class="cls_006">DE</span></div>
+<div style="position:absolute;left:201.28px;top:711.40px" class="cls_006"><span class="cls_006">204.00</span></div>
+<div style="position:absolute;left:31.43px;top:722.91px" class="cls_006"><span class="cls_006">YA</span></div>
+<div style="position:absolute;left:201.28px;top:722.91px" class="cls_006"><span class="cls_006">250.00</span></div>
+<div style="position:absolute;left:31.43px;top:734.43px" class="cls_006"><span class="cls_006">RA</span></div>
+<div style="position:absolute;left:201.28px;top:734.43px" class="cls_006"><span class="cls_006">875.00</span></div>
+<div style="position:absolute;left:68.25px;top:765.97px" class="cls_008"><span class="cls_008">ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</span></div>
+<div style="position:absolute;left:305.20px;top:765.97px" class="cls_008"><span class="cls_008">El registro de este documento puede ser verificado en la página de internet del SAT</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3207px;width:612px;height:791px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background5.jpg" width=612 height=791></div>
+<div style="position:absolute;left:362.98px;top:19.63px" class="cls_006"><span class="cls_006">Comprobante: 2206007493962 Fecha de impresión: 27/09/2019 11:23:45 Página: 2</span></div>
+<div style="position:absolute;left:37.07px;top:50.46px" class="cls_007"><span class="cls_007">Cadena original del complemento de certificación digital del SAT</span></div>
+<div style="position:absolute;left:311.88px;top:50.46px" class="cls_007"><span class="cls_007">RFC proveedor de certificado</span><span class="cls_010">   EME000602QR9</span></div>
+<div style="position:absolute;left:51.22px;top:61.01px" class="cls_013"><span class="cls_013">||1.1|D195954B-D69F-4378-9649-A05AC92271F9|2019-09-27T11:23:31|EME000602QR9|DB97wRPAsEVH4pKiew+QqR7s</span></div>
+<div style="position:absolute;left:51.22px;top:68.81px" class="cls_013"><span class="cls_013">kfZfibkaOzS5zVhKBzlQArPhkGIG4X5qu5xqUNqJkqi0VPMnKkVDtEBHuRFXuq9nrhbFn/0ZmoUP6kA1knRgsBe06z4kiepJMv1j</span></div>
+<div style="position:absolute;left:51.22px;top:76.61px" class="cls_013"><span class="cls_013">y//Kyaii9qEj4tsv7ArjjJCXAdOTQ2FLahXm58YeUDvfWq+wtdhwhA+cI43ui2+cb3nqrUEpp1uwOPp0uKFfsyXw9ty/zHrSq+HP</span></div>
+<div style="position:absolute;left:51.22px;top:84.40px" class="cls_013"><span class="cls_013">V2UqIWDRGX0UBjDVRz2EZKzIj+ZvMppMQ3UNkBX7/Ocgm6qs20bFYfYawJ2VmLV2IqLXxR6EaLgqqNck/zCQUUsKP0Qm8v9b+L5A</span></div>
+<div style="position:absolute;left:51.22px;top:92.20px" class="cls_013"><span class="cls_013">JL5sRmD1oJo7/cOSrw==|00001000000404477432||</span></div>
+<div style="position:absolute;left:37.07px;top:110.19px" class="cls_007"><span class="cls_007">Sello digital emisor</span></div>
+<div style="position:absolute;left:51.22px;top:120.75px" class="cls_013"><span class="cls_013">DB97wRPAsEVH4pKiew+QqR7skfZfibkaOzS5zVhKBzlQArPhkGIG4X5qu5xqUNqJkqi0VPMnKkVDtEBHuRFXuq9nrhbFn/0ZmoUP6</span></div>
+<div style="position:absolute;left:51.22px;top:128.54px" class="cls_013"><span class="cls_013">kA1knRgsBe06z4kiepJMv1jy//Kyaii9qEj4tsv7ArjjJCXAdOTQ2FLahXm58YeUDvfWq+wtdhwhA+cI43ui2+cb3nqrUEpp1uwOP</span></div>
+<div style="position:absolute;left:51.22px;top:136.34px" class="cls_013"><span class="cls_013">p0uKFfsyXw9ty/zHrSq+HPV2UqIWDRGX0UBjDVRz2EZKzIj+ZvMppMQ3UNkBX7/Ocgm6qs20bFYfYawJ2VmLV2IqLXxR6EaLgqqNc</span></div>
+<div style="position:absolute;left:51.22px;top:144.14px" class="cls_013"><span class="cls_013">k/zCQUUsKP0Qm8v9b+L5AJL5sRmD1oJo7/cOSrw==</span></div>
+<div style="position:absolute;left:37.07px;top:164.05px" class="cls_007"><span class="cls_007">Sello digital SAT</span></div>
+<div style="position:absolute;left:481.97px;top:164.41px" class="cls_014"><span class="cls_014">cfdi.xml</span></div>
+<div style="position:absolute;left:51.22px;top:174.61px" class="cls_013"><span class="cls_013">DqkmPjGDgUMg+UysO3ndYnv4b4yglJwhQl19OdiMecek+QXY0KYcNSNP8AaRke1UAeIkIUXnd5a7GRbmPZT2lmfCju1PQdz9alA+t</span></div>
+<div style="position:absolute;left:51.22px;top:182.40px" class="cls_013"><span class="cls_013">fHrvw5zAGAfrnUdajjzcCCWATd5BmQFlrV36aebdfAO3uhNJstY+K+YWfJiZTGqDsfrVd3JgZ6UV9PhLo9kzRENyFdMWmo9CSQ/vp</span></div>
+<div style="position:absolute;left:51.22px;top:190.20px" class="cls_013"><span class="cls_013">bRTmpiFattIl+miLFL4bnzJ6pMFyKIbuneRs0f6vClnsfvopxNk8caKwPDS/4Qhah/W1VXDWFC0TEeh+b20gIneF/qSZmUIR8Ye2R</span></div>
+<div style="position:absolute;left:51.22px;top:198.00px" class="cls_013"><span class="cls_013">Ivd6FfjoATaxzSpKnHT7GkvrxpP2EVZNu6DixnA==</span></div>
+<div style="position:absolute;left:121.27px;top:671.69px" class="cls_015"><span class="cls_015"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">Norma Oficial Mexicana NOM-151-SCFI-2001</A> </div>
+<div style="position:absolute;left:121.27px;top:686.33px" class="cls_016"><span class="cls_016"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">EDICOMUNICACIONES MEXICO, S.A. de C.V., Prestador acreditado mediante resolución número 316.09.00483,</A> </div>
+<div style="position:absolute;left:121.27px;top:696.28px" class="cls_016"><span class="cls_016"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">de fecha 5 de Marzo de 2009. Publicado en diario oficial del 7 Mayo.</A> </div>
+<div style="position:absolute;left:508.84px;top:714.28px" class="cls_017"><span class="cls_017"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">Vicente Vilata Tamarit</A> </div>
+<div style="position:absolute;left:249.38px;top:714.28px" class="cls_019"><span class="cls_019"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">Constancia</A> </div>
+<div style="position:absolute;left:508.84px;top:719.91px" class="cls_017"><span class="cls_017"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">Dtor. General</A> </div>
+<div style="position:absolute;left:508.84px;top:726.15px" class="cls_018"><span class="cls_018"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">EDICOM</A> </div>
+<div style="position:absolute;left:32.75px;top:744.50px" class="cls_017"><span class="cls_017"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">Para verificar el documento pulse sobre la imagen superior y siga las instrucciones de la página web</A> </div>
+<div style="position:absolute;left:263.78px;top:744.38px" class="cls_029"><span class="cls_029"> </span><A HREF="http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm">http://acedicom.edicomgroup.com/mx/NOM151/validacionNOM151.htm</A> </div>
+<div style="position:absolute;left:68.25px;top:765.97px" class="cls_008"><span class="cls_008">ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</span></div>
+<div style="position:absolute;left:305.20px;top:765.97px" class="cls_008"><span class="cls_008">El registro de este documento puede ser verificado en la página de internet del SAT</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4008px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background6.jpg" width=612 height=792></div>
+<div style="position:absolute;left:36.82px;top:34.07px" class="cls_022"><span class="cls_022">DOMICILIO FISCAL:</span></div>
+<div style="position:absolute;left:36.82px;top:40.05px" class="cls_022"><span class="cls_022">PUENTE DE PIEDRA No. 150 COL. TORIELLO GUERRA</span></div>
+<div style="position:absolute;left:36.82px;top:46.04px" class="cls_022"><span class="cls_022">DELEG. TLALPAN C.P. 14050 MEXICO, CIUDAD DE MEXICO.</span></div>
+<div style="position:absolute;left:36.82px;top:52.03px" class="cls_022"><span class="cls_022">TEL: 5424-7200 FAX:5606-1651 R.F.C. MSU-820125-T58</span></div>
+<div style="position:absolute;left:233.55px;top:56.90px" class="cls_023"><span class="cls_023">- *UDC01</span></div>
+<div style="position:absolute;left:36.82px;top:64.00px" class="cls_022"><span class="cls_022">REGIMEN FISCAL: 601 REGIMEN GENERAL DE LEY PERSONAS MORALES</span></div>
+<div style="position:absolute;left:517.20px;top:76.32px" class="cls_023"><span class="cls_023">FACTURA</span></div>
+<div style="position:absolute;left:30.00px;top:90.07px" class="cls_021"><span class="cls_021">ASTRAZENECA, S.A DE C.V</span></div>
+<div style="position:absolute;left:347.01px;top:90.32px" class="cls_023"><span class="cls_023">00001000000407836768</span></div>
+<div style="position:absolute;left:30.00px;top:98.00px" class="cls_021"><span class="cls_021">PERIFERICO SUR NO. 4305 PISO 5</span></div>
+<div style="position:absolute;left:30.00px;top:105.93px" class="cls_021"><span class="cls_021">JARDINES EN LA MONTAÑA, TLALPAN</span></div>
+<div style="position:absolute;left:502.30px;top:105.99px" class="cls_023"><span class="cls_023">I</span></div>
+<div style="position:absolute;left:530.86px;top:107.24px" class="cls_023"><span class="cls_023">12459639</span></div>
+<div style="position:absolute;left:30.00px;top:113.86px" class="cls_021"><span class="cls_021">14210  CIUDAD DE MEXICO MEXICO</span></div>
+<div style="position:absolute;left:30.00px;top:121.79px" class="cls_021"><span class="cls_021">R.F.C. AST961231B69</span></div>
+<div style="position:absolute;left:342.51px;top:118.68px" class="cls_024"><span class="cls_024">Ciudad de México 2019-09-23T12:41:29</span></div>
+<div style="position:absolute;left:30.00px;top:129.72px" class="cls_021"><span class="cls_021">Uso del CFDI: G03</span></div>
+<div style="position:absolute;left:329.39px;top:133.69px" class="cls_025"><span class="cls_025">3d9b9ac7-541a-44d1-9236-8dea6038990e</span></div>
+<div style="position:absolute;left:543.16px;top:135.99px" class="cls_023"><span class="cls_023">2944627</span></div>
+<div style="position:absolute;left:32.50px;top:147.07px" class="cls_023"><span class="cls_023">Médico</span></div>
+<div style="position:absolute;left:75.71px;top:147.07px" class="cls_023"><span class="cls_023">:MEDICO GENERAL</span></div>
+<div style="position:absolute;left:368.56px;top:147.07px" class="cls_023"><span class="cls_023">MEDICA SUR, S.A.B. DE C.V.</span></div>
+<div style="position:absolute;left:32.50px;top:156.13px" class="cls_023"><span class="cls_023">Cuenta Paciente :</span></div>
+<div style="position:absolute;left:123.71px;top:156.13px" class="cls_023"><span class="cls_023">844708 RODRIGUEZ  DIAZ OSCAR  MARIO</span></div>
+<div style="position:absolute;left:32.50px;top:165.20px" class="cls_023"><span class="cls_023">Fec.Nac. : 01/10/1981  Edad:</span></div>
+<div style="position:absolute;left:176.52px;top:165.20px" class="cls_023"><span class="cls_023">37  Sexo: Masculino</span></div>
+<div style="position:absolute;left:32.50px;top:174.26px" class="cls_023"><span class="cls_023">Teléfono 55433626</span></div>
+<div style="position:absolute;left:39.45px;top:194.01px" class="cls_026"><span class="cls_026">CLAVE      CANTIDAD      CLAVE        UNIDAD</span></div>
+<div style="position:absolute;left:260.79px;top:194.01px" class="cls_026"><span class="cls_026">DESCRIPCION</span></div>
+<div style="position:absolute;left:388.80px;top:194.01px" class="cls_026"><span class="cls_026">VALOR</span></div>
+<div style="position:absolute;left:441.47px;top:194.01px" class="cls_026"><span class="cls_026">IMPORTE      DESCUENTO     IMPORTE</span></div>
+<div style="position:absolute;left:31.45px;top:201.85px" class="cls_026"><span class="cls_026">PROD/SERV</span></div>
+<div style="position:absolute;left:121.73px;top:201.85px" class="cls_026"><span class="cls_026">UNIDAD</span></div>
+<div style="position:absolute;left:383.75px;top:201.85px" class="cls_026"><span class="cls_026">UNITARIO</span></div>
+<div style="position:absolute;left:548.03px;top:201.85px" class="cls_026"><span class="cls_026">NETO</span></div>
+<div style="position:absolute;left:33.97px;top:222.52px" class="cls_021"><span class="cls_021">85122200</span></div>
+<div style="position:absolute;left:109.58px;top:222.52px" class="cls_021"><span class="cls_021">1</span></div>
+<div style="position:absolute;left:130.58px;top:222.52px" class="cls_021"><span class="cls_021">E48</span></div>
+<div style="position:absolute;left:176.79px;top:222.52px" class="cls_021"><span class="cls_021">pq</span></div>
+<div style="position:absolute;left:201.99px;top:222.52px" class="cls_021"><span class="cls_021">CHECK UP-EMPRESA "C"</span></div>
+<div style="position:absolute;left:391.03px;top:222.52px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:449.84px;top:222.52px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:512.85px;top:222.52px" class="cls_021"><span class="cls_021">0.00</span></div>
+<div style="position:absolute;left:546.45px;top:222.52px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:92.78px;top:230.45px" class="cls_021"><span class="cls_021">Traslado: Base:13097.84 Impuesto:002 TipoFactor:Tasa 0.160000 Importe:2095.65</span></div>
+<div style="position:absolute;left:29.76px;top:254.24px" class="cls_021"><span class="cls_021">*********************************Cadena Original del Complemento de Certificación Digital del SAT:**********************************</span></div>
+<div style="position:absolute;left:29.76px;top:262.17px" class="cls_021"><span class="cls_021">*||1.1|3d9b9ac7-541a-44d1-9236-8dea6038990e|2019-09-23T12:42:46|CCC1007293K0|LbvAs74tHEc3EPBTKlQobm+voVYLP7kMpr3p3PlWUakkErdGRJv3wq*</span></div>
+<div style="position:absolute;left:29.76px;top:270.10px" class="cls_021"><span class="cls_021">*+witO87cMBSq0PIYjTYe7vrnNFibUB5davQeb8xI2HTbjcK9Q16U0Uw0ksHYqRHdKDtPWyHd3YxymK9uo0SzO2b8/fSm5EIB3H++yXa0XgKP70EoEGrgZ5waUYQMXYh3gP*</span></div>
+<div style="position:absolute;left:29.76px;top:278.03px" class="cls_021"><span class="cls_021">*w66wniBp/Xerl1Dj5AmkWVtY/Sw7pJOq4WGTt9jquKRbnVyaOy14soD8dWL38Fl/ldcTmyeke8FwUq2Voit+mTA4/okhlGWp2PjBRjb9Vwh1B0hn367DUheXetg8HahtXz*</span></div>
+<div style="position:absolute;left:29.76px;top:285.96px" class="cls_021"><span class="cls_021">*D0zcLu7tdNRmvx7/I647jFanZFYg==|00001000000405555426||*</span></div>
+<div style="position:absolute;left:29.76px;top:293.89px" class="cls_021"><span class="cls_021">************************************************************************************************************************************</span></div>
+<div style="position:absolute;left:92.78px;top:301.82px" class="cls_021"><span class="cls_021">Emitido por: EMITIDO POR : ALEJANDRA ISABEL RIVAS GODINEZ</span></div>
+<div style="position:absolute;left:92.78px;top:309.75px" class="cls_021"><span class="cls_021">Impreso Por: IMPRESO POR : ALEJANDRA ISABEL RIVAS GODINEZ</span></div>
+<div style="position:absolute;left:92.78px;top:325.61px" class="cls_021"><span class="cls_021">Base</span></div>
+<div style="position:absolute;left:138.98px;top:325.61px" class="cls_021"><span class="cls_021">13,097.84  IVA Tasa 16%</span></div>
+<div style="position:absolute;left:269.21px;top:325.61px" class="cls_021"><span class="cls_021">2,095.65</span></div>
+<div style="position:absolute;left:92.78px;top:349.40px" class="cls_021"><span class="cls_021">Sello Digital del CFDI: LbvAs74tHEc3EPBTKlQobm+voVYLP7kMpr3p3PlWUakkErdGRJv3wq+witO87cMBSq0PIYjTYe7vrnNFibUB5davQeb8</span></div>
+<div style="position:absolute;left:92.78px;top:357.33px" class="cls_021"><span class="cls_021">kErdGRJv3wq+witO87cMBSq0PIYjTYe7vrnNFibUB5davQeb8xI2HTbjcK9Q16U0Uw0ksHYqRHdKDtPWyHd3YxymK9uo0SzO2b8/fSm5EIB3H++yXa0X</span></div>
+<div style="position:absolute;left:92.78px;top:365.26px" class="cls_021"><span class="cls_021">ksHYqRHdKDtPWyHd3YxymK9uo0SzO2b8/fSm5EIB3H++yXa0XgKP70EoEGrgZ5waUYQMXYh3gPw66wniBp/Xerl1Dj5AmkWVtY/Sw7pJOq4WGTt9jquK</span></div>
+<div style="position:absolute;left:92.78px;top:373.19px" class="cls_021"><span class="cls_021">MXYh3gPw66wniBp/Xerl1Dj5AmkWVtY/Sw7pJOq4WGTt9jquKRbnVyaOy14soD8dWL38Fl/ldcTmyeke8FwUq2Voit+mTA4/okhlGWp2PjBRjb9Vwh1B</span></div>
+<div style="position:absolute;left:92.78px;top:381.12px" class="cls_021"><span class="cls_021">8Fl/ldcTmyeke8FwUq2Voit+mTA4/okhlGWp2PjBRjb9Vwh1B0hn367DUheXetg8HahtXzD0zcLu7tdNRmvx7/I647jFanZFYg==</span></div>
+<div style="position:absolute;left:92.78px;top:389.05px" class="cls_021"><span class="cls_021">tXzD0zcLu7tdNRmvx7/I647jFanZFYg==</span></div>
+<div style="position:absolute;left:92.78px;top:404.91px" class="cls_021"><span class="cls_021">Sello del SAT: VJmIX5aD9V1xYID9kqDQg6lGFUZZerXKsTuyLUzB5N60wcxSF/cvA+pp1VWriD4SSHI37TRAQDvmJZmY8uF0UjPzpXDXhvlsnjh7d</span></div>
+<div style="position:absolute;left:92.78px;top:412.84px" class="cls_021"><span class="cls_021">A+pp1VWriD4SSHI37TRAQDvmJZmY8uF0UjPzpXDXhvlsnjh7dmPqUXSGPdiYwpTnxrv45iBODgSk+tzaBK3MQQQurUoQ8k2OPa/JkmSWkM7+rU08DdWL</span></div>
+<div style="position:absolute;left:92.78px;top:420.77px" class="cls_021"><span class="cls_021">45iBODgSk+tzaBK3MQQQurUoQ8k2OPa/JkmSWkM7+rU08DdWLGcVk25Ud+GB1N1to5i+s5PFwKgv99NusJAXndPXi4ZiMRfkCDLBOq/FCknVMhhlV09Q</span></div>
+<div style="position:absolute;left:92.78px;top:428.70px" class="cls_021"><span class="cls_021">+s5PFwKgv99NusJAXndPXi4ZiMRfkCDLBOq/FCknVMhhlV09QBV84By3FC8CONDXqGShG+RDB3PHXflUTEdlAjeznVsRbuX7jn+M1pmwskiLU6+nytM4</span></div>
+<div style="position:absolute;left:92.78px;top:436.63px" class="cls_021"><span class="cls_021">hG+RDB3PHXflUTEdlAjeznVsRbuX7jn+M1pmwskiLU6+nytM4kV10PtL+NeOXHJWfYFUpeNM77bVeTrBSWuwX34kA==</span></div>
+<div style="position:absolute;left:92.78px;top:444.56px" class="cls_021"><span class="cls_021">UpeNM77bVeTrBSWuwX34kA==</span></div>
+<div style="position:absolute;left:92.78px;top:460.42px" class="cls_021"><span class="cls_021">Fecha y Hora de Certificación: 2019-09-23T12:42:46</span></div>
+<div style="position:absolute;left:92.78px;top:476.27px" class="cls_021"><span class="cls_021">No de Serie del Certificado del SAT: 00001000000405555426</span></div>
+<div style="position:absolute;left:92.78px;top:492.13px" class="cls_021"><span class="cls_021">Tipo de Comprobante: I</span></div>
+<div style="position:absolute;left:444.00px;top:642.93px" class="cls_027"><span class="cls_027">SUB-TOTAL:</span></div>
+<div style="position:absolute;left:534.80px;top:641.41px" class="cls_023"><span class="cls_023">13,097.84</span></div>
+<div style="position:absolute;left:144.05px;top:646.91px" class="cls_023"><span class="cls_023">QUINCE MIL CIENTO NOVENTA Y TRES PESOS 49/100 MN</span></div>
+<div style="position:absolute;left:388.89px;top:646.91px" class="cls_023"><span class="cls_023">**</span></div>
+<div style="position:absolute;left:440.70px;top:663.28px" class="cls_027"><span class="cls_027">DESCUENTO</span></div>
+<div style="position:absolute;left:558.80px;top:661.35px" class="cls_023"><span class="cls_023">0.00</span></div>
+<div style="position:absolute;left:144.05px;top:665.03px" class="cls_023"><span class="cls_023">Moneda: MXN</span></div>
+<div style="position:absolute;left:144.05px;top:674.10px" class="cls_023"><span class="cls_023">Forma de Pago: 04</span></div>
+<div style="position:absolute;left:144.05px;top:683.16px" class="cls_023"><span class="cls_023">Método de Pago: PUE</span></div>
+<div style="position:absolute;left:478.00px;top:683.63px" class="cls_027"><span class="cls_027">IVA:</span></div>
+<div style="position:absolute;left:544.40px;top:681.28px" class="cls_023"><span class="cls_023">2095.65</span></div>
+<div style="position:absolute;left:144.05px;top:692.22px" class="cls_023"><span class="cls_023">Coaseguro: 0.00</span></div>
+<div style="position:absolute;left:144.05px;top:701.28px" class="cls_023"><span class="cls_023">Deducible: 0.00</span></div>
+<div style="position:absolute;left:534.80px;top:701.22px" class="cls_023"><span class="cls_023">15,193.49</span></div>
+<div style="position:absolute;left:464.16px;top:703.99px" class="cls_027"><span class="cls_027">TOTAL:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4810px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7298eea6-8fd3-11eb-8b25-0cc47a792c0a_id_7298eea6-8fd3-11eb-8b25-0cc47a792c0a_files/background7.jpg" width=612 height=792></div>
+<div style="position:absolute;left:36.82px;top:34.07px" class="cls_022"><span class="cls_022">DOMICILIO FISCAL:</span></div>
+<div style="position:absolute;left:36.82px;top:40.05px" class="cls_022"><span class="cls_022">PUENTE DE PIEDRA No. 150 COL. TORIELLO GUERRA</span></div>
+<div style="position:absolute;left:36.82px;top:46.04px" class="cls_022"><span class="cls_022">DELEG. TLALPAN C.P. 14050 MEXICO, CIUDAD DE MEXICO.</span></div>
+<div style="position:absolute;left:36.82px;top:52.03px" class="cls_022"><span class="cls_022">TEL: 5424-7200 FAX:5606-1651 R.F.C. MSU-820125-T58</span></div>
+<div style="position:absolute;left:233.55px;top:56.90px" class="cls_023"><span class="cls_023">- *UDC01</span></div>
+<div style="position:absolute;left:36.82px;top:64.00px" class="cls_022"><span class="cls_022">REGIMEN FISCAL: 601 REGIMEN GENERAL DE LEY PERSONAS MORALES</span></div>
+<div style="position:absolute;left:517.20px;top:76.32px" class="cls_023"><span class="cls_023">FACTURA</span></div>
+<div style="position:absolute;left:30.00px;top:90.07px" class="cls_021"><span class="cls_021">ASTRAZENECA, S.A DE C.V</span></div>
+<div style="position:absolute;left:347.01px;top:90.32px" class="cls_023"><span class="cls_023">00001000000407836768</span></div>
+<div style="position:absolute;left:30.00px;top:98.00px" class="cls_021"><span class="cls_021">PERIFERICO SUR NO. 4305 PISO 5</span></div>
+<div style="position:absolute;left:30.00px;top:105.93px" class="cls_021"><span class="cls_021">JARDINES EN LA MONTAÑA, TLALPAN</span></div>
+<div style="position:absolute;left:502.30px;top:105.99px" class="cls_023"><span class="cls_023">I</span></div>
+<div style="position:absolute;left:530.86px;top:107.24px" class="cls_023"><span class="cls_023">12459657</span></div>
+<div style="position:absolute;left:30.00px;top:113.86px" class="cls_021"><span class="cls_021">14210  CIUDAD DE MEXICO MEXICO</span></div>
+<div style="position:absolute;left:30.00px;top:121.79px" class="cls_021"><span class="cls_021">R.F.C. AST961231B69</span></div>
+<div style="position:absolute;left:342.51px;top:118.68px" class="cls_024"><span class="cls_024">Ciudad de México 2019-09-23T13:00:13</span></div>
+<div style="position:absolute;left:30.00px;top:129.72px" class="cls_021"><span class="cls_021">Uso del CFDI: G03</span></div>
+<div style="position:absolute;left:329.39px;top:133.69px" class="cls_025"><span class="cls_025">25a253fe-2ab3-48c1-8031-4af4045d5651</span></div>
+<div style="position:absolute;left:543.16px;top:135.99px" class="cls_023"><span class="cls_023">2944645</span></div>
+<div style="position:absolute;left:32.50px;top:147.07px" class="cls_023"><span class="cls_023">Médico</span></div>
+<div style="position:absolute;left:75.71px;top:147.07px" class="cls_023"><span class="cls_023">:MEDICO GENERAL</span></div>
+<div style="position:absolute;left:368.56px;top:147.07px" class="cls_023"><span class="cls_023">MEDICA SUR, S.A.B. DE C.V.</span></div>
+<div style="position:absolute;left:32.50px;top:156.13px" class="cls_023"><span class="cls_023">Cuenta Paciente :</span></div>
+<div style="position:absolute;left:123.71px;top:156.13px" class="cls_023"><span class="cls_023">844709 AVILA  FERNANDEZ ANGELA  MARIA</span></div>
+<div style="position:absolute;left:32.50px;top:165.20px" class="cls_023"><span class="cls_023">Fec.Nac. : 07/02/1981  Edad:</span></div>
+<div style="position:absolute;left:176.52px;top:165.20px" class="cls_023"><span class="cls_023">38  Sexo: Femenino</span></div>
+<div style="position:absolute;left:32.50px;top:174.26px" class="cls_023"><span class="cls_023">Teléfono 55433626</span></div>
+<div style="position:absolute;left:39.45px;top:194.01px" class="cls_026"><span class="cls_026">CLAVE      CANTIDAD      CLAVE        UNIDAD</span></div>
+<div style="position:absolute;left:260.79px;top:194.01px" class="cls_026"><span class="cls_026">DESCRIPCION</span></div>
+<div style="position:absolute;left:388.80px;top:194.01px" class="cls_026"><span class="cls_026">VALOR</span></div>
+<div style="position:absolute;left:441.47px;top:194.01px" class="cls_026"><span class="cls_026">IMPORTE      DESCUENTO     IMPORTE</span></div>
+<div style="position:absolute;left:31.45px;top:201.85px" class="cls_026"><span class="cls_026">PROD/SERV</span></div>
+<div style="position:absolute;left:121.73px;top:201.85px" class="cls_026"><span class="cls_026">UNIDAD</span></div>
+<div style="position:absolute;left:383.75px;top:201.85px" class="cls_026"><span class="cls_026">UNITARIO</span></div>
+<div style="position:absolute;left:548.03px;top:201.85px" class="cls_026"><span class="cls_026">NETO</span></div>
+<div style="position:absolute;left:33.97px;top:222.52px" class="cls_021"><span class="cls_021">85122200</span></div>
+<div style="position:absolute;left:109.58px;top:222.52px" class="cls_021"><span class="cls_021">1</span></div>
+<div style="position:absolute;left:130.58px;top:222.52px" class="cls_021"><span class="cls_021">E48</span></div>
+<div style="position:absolute;left:176.79px;top:222.52px" class="cls_021"><span class="cls_021">SI</span></div>
+<div style="position:absolute;left:201.99px;top:222.52px" class="cls_021"><span class="cls_021">DENSITOMETRIA 2 REGIONES COLUMNA Y CADER</span></div>
+<div style="position:absolute;left:395.23px;top:222.52px" class="cls_021"><span class="cls_021">1,736.28</span></div>
+<div style="position:absolute;left:454.04px;top:222.52px" class="cls_021"><span class="cls_021">1,736.28</span></div>
+<div style="position:absolute;left:512.85px;top:222.52px" class="cls_021"><span class="cls_021">0.00</span></div>
+<div style="position:absolute;left:550.65px;top:222.52px" class="cls_021"><span class="cls_021">1,736.28</span></div>
+<div style="position:absolute;left:92.78px;top:230.45px" class="cls_021"><span class="cls_021">Traslado: Base:1736.28 Impuesto:002 TipoFactor:Tasa 0.160000 Importe:277.80</span></div>
+<div style="position:absolute;left:33.97px;top:246.31px" class="cls_021"><span class="cls_021">85121807</span></div>
+<div style="position:absolute;left:109.58px;top:246.31px" class="cls_021"><span class="cls_021">1</span></div>
+<div style="position:absolute;left:130.58px;top:246.31px" class="cls_021"><span class="cls_021">E48</span></div>
+<div style="position:absolute;left:176.79px;top:246.31px" class="cls_021"><span class="cls_021">SE</span></div>
+<div style="position:absolute;left:201.99px;top:246.31px" class="cls_021"><span class="cls_021">US. PELVICO (UTERO Y OVARIOS)</span></div>
+<div style="position:absolute;left:395.23px;top:246.31px" class="cls_021"><span class="cls_021">1,669.95</span></div>
+<div style="position:absolute;left:454.04px;top:246.31px" class="cls_021"><span class="cls_021">1,669.95</span></div>
+<div style="position:absolute;left:512.85px;top:246.31px" class="cls_021"><span class="cls_021">0.00</span></div>
+<div style="position:absolute;left:550.65px;top:246.31px" class="cls_021"><span class="cls_021">1,669.95</span></div>
+<div style="position:absolute;left:92.78px;top:254.24px" class="cls_021"><span class="cls_021">Traslado: Base:1669.95 Impuesto:002 TipoFactor:Tasa 0.160000 Importe:267.19</span></div>
+<div style="position:absolute;left:33.97px;top:270.10px" class="cls_021"><span class="cls_021">85122200</span></div>
+<div style="position:absolute;left:109.58px;top:270.10px" class="cls_021"><span class="cls_021">1</span></div>
+<div style="position:absolute;left:130.58px;top:270.10px" class="cls_021"><span class="cls_021">E48</span></div>
+<div style="position:absolute;left:176.79px;top:270.10px" class="cls_021"><span class="cls_021">pq</span></div>
+<div style="position:absolute;left:201.99px;top:270.10px" class="cls_021"><span class="cls_021">CHECK UP-EMPRESA "A"</span></div>
+<div style="position:absolute;left:391.03px;top:270.10px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:449.84px;top:270.10px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:512.85px;top:270.10px" class="cls_021"><span class="cls_021">0.00</span></div>
+<div style="position:absolute;left:546.45px;top:270.10px" class="cls_021"><span class="cls_021">13,097.84</span></div>
+<div style="position:absolute;left:92.78px;top:278.03px" class="cls_021"><span class="cls_021">Traslado: Base:13097.84 Impuesto:002 TipoFactor:Tasa 0.160000 Importe:2095.65</span></div>
+<div style="position:absolute;left:29.76px;top:301.82px" class="cls_021"><span class="cls_021">*********************************Cadena Original del Complemento de Certificación Digital del SAT:**********************************</span></div>
+<div style="position:absolute;left:29.76px;top:309.75px" class="cls_021"><span class="cls_021">*||1.1|25a253fe-2ab3-48c1-8031-4af4045d5651|2019-09-23T13:02:07|CCC1007293K0|MSK/kHAJdTvr2Bojr9jEontWhl5+CKM26k0LYUfNeqZIWM4NTXsb0X*</span></div>
+<div style="position:absolute;left:29.76px;top:317.68px" class="cls_021"><span class="cls_021">*UkFhpzVQhkMavVCyAreJ+DXbLJQpEWEGvRU4pFF+KPEn15qXvo70USocJJsFXfR46lz4fuMYG7m7q232EtJmtgmDH0JKiloK6nBTHMju6ZA5QlgqMhuiC1Ic1r4AFwmPtD*</span></div>
+<div style="position:absolute;left:29.76px;top:325.61px" class="cls_021"><span class="cls_021">*yi+k9epXzfRxpzqAyk5k2XbkpRbIAIScNUIiuxT+fecWlDklw+GegMT8fU1D+Rj88+LCzPgzPDTgIXYwD/tnPbd85PTi7JBgSC9eXBfQLr+N+VwtWYPZKhj0+m1j7RdY5W*</span></div>
+<div style="position:absolute;left:29.76px;top:333.54px" class="cls_021"><span class="cls_021">*c4WIos3gCCqEUWIe/NbPAZygmANw==|00001000000405555426||*</span></div>
+<div style="position:absolute;left:29.76px;top:341.47px" class="cls_021"><span class="cls_021">************************************************************************************************************************************</span></div>
+<div style="position:absolute;left:92.78px;top:349.40px" class="cls_021"><span class="cls_021">Emitido por: EMITIDO POR : ALEJANDRA ISABEL RIVAS GODINEZ</span></div>
+<div style="position:absolute;left:92.78px;top:357.33px" class="cls_021"><span class="cls_021">Impreso Por: IMPRESO POR : ALEJANDRA ISABEL RIVAS GODINEZ</span></div>
+<div style="position:absolute;left:92.78px;top:373.19px" class="cls_021"><span class="cls_021">Base</span></div>
+<div style="position:absolute;left:138.98px;top:373.19px" class="cls_021"><span class="cls_021">16,504.07  IVA Tasa 16%</span></div>
+<div style="position:absolute;left:269.21px;top:373.19px" class="cls_021"><span class="cls_021">2,640.64</span></div>
+<div style="position:absolute;left:92.78px;top:396.98px" class="cls_021"><span class="cls_021">Sello Digital del CFDI: MSK/kHAJdTvr2Bojr9jEontWhl5+CKM26k0LYUfNeqZIWM4NTXsb0XUkFhpzVQhkMavVCyAreJ+DXbLJQpEWEGvRU4pF</span></div>
+<div style="position:absolute;left:92.78px;top:404.91px" class="cls_021"><span class="cls_021">IWM4NTXsb0XUkFhpzVQhkMavVCyAreJ+DXbLJQpEWEGvRU4pFF+KPEn15qXvo70USocJJsFXfR46lz4fuMYG7m7q232EtJmtgmDH0JKiloK6nBTHMju6</span></div>
+<div style="position:absolute;left:92.78px;top:412.84px" class="cls_021"><span class="cls_021">JJsFXfR46lz4fuMYG7m7q232EtJmtgmDH0JKiloK6nBTHMju6ZA5QlgqMhuiC1Ic1r4AFwmPtDyi+k9epXzfRxpzqAyk5k2XbkpRbIAIScNUIiuxT+fe</span></div>
+<div style="position:absolute;left:92.78px;top:420.77px" class="cls_021"><span class="cls_021">AFwmPtDyi+k9epXzfRxpzqAyk5k2XbkpRbIAIScNUIiuxT+fecWlDklw+GegMT8fU1D+Rj88+LCzPgzPDTgIXYwD/tnPbd85PTi7JBgSC9eXBfQLr+N+</span></div>
+<div style="position:absolute;left:92.78px;top:428.70px" class="cls_021"><span class="cls_021">+Rj88+LCzPgzPDTgIXYwD/tnPbd85PTi7JBgSC9eXBfQLr+N+VwtWYPZKhj0+m1j7RdY5Wc4WIos3gCCqEUWIe/NbPAZygmANw==</span></div>
+<div style="position:absolute;left:92.78px;top:436.63px" class="cls_021"><span class="cls_021">Y5Wc4WIos3gCCqEUWIe/NbPAZygmANw==</span></div>
+<div style="position:absolute;left:92.78px;top:452.49px" class="cls_021"><span class="cls_021">Sello del SAT: jk/t1jlZtAl2KFPpAh+JIxQEx+awyrMkNgMFrlq/V5pPBjszHMzsf0iW9HyFWt/QhG2Mk/4jN3XrDDU3b1Ys2z3NI69sJa4190ga2</span></div>
+<div style="position:absolute;left:92.78px;top:460.42px" class="cls_021"><span class="cls_021">f0iW9HyFWt/QhG2Mk/4jN3XrDDU3b1Ys2z3NI69sJa4190ga2Xt2LhEPlugz06ODCvsbEfr0p25CLrpM0ykN46l1elBfLAt2/pAa0HHHWjmy32m54ew9</span></div>
+<div style="position:absolute;left:92.78px;top:468.34px" class="cls_021"><span class="cls_021">bEfr0p25CLrpM0ykN46l1elBfLAt2/pAa0HHHWjmy32m54ew9yphkSQgqtRczKejuxLeFDs4CCvxdypqTZjty755l2taWJa1qKs9oBCWXW7LGexwS1/H</span></div>
+<div style="position:absolute;left:92.78px;top:476.27px" class="cls_021"><span class="cls_021">eFDs4CCvxdypqTZjty755l2taWJa1qKs9oBCWXW7LGexwS1/H3HdymV8Yh16qfaf+RdfeIVi2Dk10lRh8xT4Z0QVkPOOs+dGoP/XCgQsvYeSta4rNqDO</span></div>
+<div style="position:absolute;left:92.78px;top:484.20px" class="cls_021"><span class="cls_021">feIVi2Dk10lRh8xT4Z0QVkPOOs+dGoP/XCgQsvYeSta4rNqDOxNnGLV8e0b1JWKPPNq4LofzeRd573rq6tv10pDwg==</span></div>
+<div style="position:absolute;left:92.78px;top:492.13px" class="cls_021"><span class="cls_021">4LofzeRd573rq6tv10pDwg==</span></div>
+<div style="position:absolute;left:92.78px;top:507.99px" class="cls_021"><span class="cls_021">Fecha y Hora de Certificación: 2019-09-23T13:02:07</span></div>
+<div style="position:absolute;left:92.78px;top:523.85px" class="cls_021"><span class="cls_021">No de Serie del Certificado del SAT: 00001000000405555426</span></div>
+<div style="position:absolute;left:92.78px;top:539.71px" class="cls_021"><span class="cls_021">Tipo de Comprobante: I</span></div>
+<div style="position:absolute;left:534.80px;top:641.41px" class="cls_023"><span class="cls_023">16,504.07</span></div>
+<div style="position:absolute;left:444.00px;top:642.93px" class="cls_027"><span class="cls_027">SUB-TOTAL:</span></div>
+<div style="position:absolute;left:144.05px;top:646.91px" class="cls_023"><span class="cls_023">DIECINUEVE MIL CIENTO CUARENTA Y CUATRO PESOS 71/100 MN</span></div>
+<div style="position:absolute;left:144.05px;top:655.97px" class="cls_023"><span class="cls_023">**</span></div>
+<div style="position:absolute;left:440.70px;top:663.28px" class="cls_027"><span class="cls_027">DESCUENTO</span></div>
+<div style="position:absolute;left:558.80px;top:661.35px" class="cls_023"><span class="cls_023">0.00</span></div>
+<div style="position:absolute;left:144.05px;top:674.10px" class="cls_023"><span class="cls_023">Moneda: MXN</span></div>
+<div style="position:absolute;left:144.05px;top:683.16px" class="cls_023"><span class="cls_023">Forma de Pago: 04</span></div>
+<div style="position:absolute;left:478.00px;top:683.63px" class="cls_027"><span class="cls_027">IVA:</span></div>
+<div style="position:absolute;left:544.40px;top:681.28px" class="cls_023"><span class="cls_023">2640.64</span></div>
+<div style="position:absolute;left:144.05px;top:692.22px" class="cls_023"><span class="cls_023">Método de Pago: PUE</span></div>
+<div style="position:absolute;left:144.05px;top:701.28px" class="cls_023"><span class="cls_023">Coaseguro: 0.00</span></div>
+<div style="position:absolute;left:534.80px;top:701.22px" class="cls_023"><span class="cls_023">19,144.71</span></div>
+<div style="position:absolute;left:464.16px;top:703.99px" class="cls_027"><span class="cls_027">TOTAL:</span></div>
+<div style="position:absolute;left:144.05px;top:710.35px" class="cls_023"><span class="cls_023">Deducible: 0.00</span></div>
+</div>
+
+</body>
+</html>
